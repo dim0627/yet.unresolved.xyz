@@ -3,7 +3,7 @@ version: '3'
 services:
   web:
     build: .
-    command: npm start
+    command: yarn start
     volumes:
       - .:/myapp
     ports:
