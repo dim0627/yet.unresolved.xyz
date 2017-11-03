@@ -6,10 +6,10 @@ class Footer extends Component {
   render() {
     return (
       <footer className="l-footer">
-      <div className="l-container">
-      <div className="copy">&copy; {Constants.site_name}</div>
-      <div className="author">{Constants.author}</div>
-      </div>
+        <div className="l-container">
+          <div className="copy">&copy; {Constants.site_name}</div>
+          <div className="author">{Constants.author}</div>
+        </div>
       </footer>
     );
   }

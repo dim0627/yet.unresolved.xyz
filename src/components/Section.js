@@ -6,16 +6,16 @@ class Section extends Component {
   render() {
     return (
       <section className="general-section">
-      <div className="l-container">
+        <div className="l-container">
 
-      <div class="pane-half">
-      <h2 className="title">{this.props.title}</h2>
-      </div>
+          <div className="pane-half">
+            <h2 className="title">{this.props.title}</h2>
+          </div>
 
-      <div class="pane-half">
-      </div>
+          <div className="pane-half">
+          </div>
 
-      </div>
+        </div>
       </section>
     );
   }

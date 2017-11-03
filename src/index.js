@@ -10,12 +10,12 @@ import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
   <div>
-  <Header />
-  <Hero />
-  <Section title="Me" />
-  <Section title="Projects" />
-  <Section title="Works" />
-  <Footer />
+    <Header />
+    <Hero />
+    <Section title="Me" />
+    <Section title="Projects" />
+    <Section title="Works" />
+    <Footer />
   </div>,
   document.getElementById('root'));
 registerServiceWorker();
