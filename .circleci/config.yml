@@ -34,3 +34,6 @@ jobs:
 
       # run stylelint
       - run: ./node_modules/.bin/stylelint --config .stylelintrc.yml src/**/*.css
+
+      # run eslint
+      - run: ./node_modules/.bin/eslint src/**/*.js

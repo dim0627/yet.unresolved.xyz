@@ -30,6 +30,7 @@ const Constants = {
       ),
       stacks: ["Hugo", "HTML/CSS", "Go html/template", "Responsive Web Design", "AMP"],
       sourceUrl: "https://github.com/dim0627/hugo_theme_robust",
+      relatedUrl: "https://themes.gohugo.io/robust/",
       index: true,
     },
     {
@@ -42,16 +43,19 @@ const Constants = {
       ),
       stacks: ["Hugo", "HTML/CSS", "Go html/template", "Responsive Web Design", "AMP"],
       sourceUrl: "https://github.com/dim0627/hugo_theme_aglaus",
+      relatedUrl: "https://themes.gohugo.io/aglaus/",
       index: true,
     },
     {
       title: "Hugo Theme Beg",
       sourceUrl: "https://github.com/dim0627/hugo_theme_beg",
+      relatedUrl: "https://themes.gohugo.io/beg/",
       index: false,
     },
     {
       title: "Hugo Theme Solit",
       sourceUrl: "https://github.com/dim0627/hugo_theme_solit",
+      relatedUrl: "https://themes.gohugo.io/hugo_theme_solit/",
       index: false,
     },
     {
