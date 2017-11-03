@@ -7,7 +7,7 @@ class Hero extends Component {
     return (
       <section className="hero">
         <div className="l-container">
-          <h1 className="title" dangerouslySetInnerHTML={{__html: Constants.motto}} />
+          <h1 className="title">{Constants.motto}</h1>
         </div>
       </section>
     );

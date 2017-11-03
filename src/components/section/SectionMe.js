@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Constants from '../../Constants';
 import Section from './Section';
 import './SectionMe.css';
@@ -7,8 +7,8 @@ export class SectionMe extends Section {
   constructor(props) {
     super(props);
     this.state = {
+      sectionId: "me",
       title: "Me",
-      skills: Constants.author.skills,
     };
   }
 
@@ -57,7 +57,7 @@ export class SectionMe extends Section {
         {this.renderDefinitionList("Language", () => this.renderListItems(Constants.author.languages))}
         {this.renderDefinitionList("MainSkills", () => this.renderListItems(Constants.author.mainSkills))}
         {this.renderDefinitionList("SubSkills", () => this.renderListItems(Constants.author.subSkills))}
-        {this.renderDefinitionList("Hiring", () => Constants.author.hiring)}
+        {this.renderDefinitionList("Hiring", () => <div dangerouslySetInnerHTML={{__html: Constants.author.hiring}} />)}
       </div>
     );
   }

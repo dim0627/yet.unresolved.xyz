@@ -9,9 +9,9 @@ class Header extends Component {
         <div className="l-container">
           <div className="logo"><a href="/">{Constants.site_name}</a></div>
           <div className="ops">
-            <a href="#">Me</a>
-            <a href="#">Projects</a>
-            <a href="#">Works</a>
+            <a href="#me">Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#works">Works</a>
           </div>
         </div>
       </header>

@@ -1,0 +1,15 @@
+.project {
+  padding: 1.5rem 0;
+}
+
+.project .title {
+  margin-bottom: .5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+.project .description p {
+  margin: .25rem 0;
+  line-height: 1.25rem;
+}

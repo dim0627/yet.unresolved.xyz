@@ -65,3 +65,18 @@ section {
   margin: 0 auto;
   padding: 0 1rem;
 }
+
+.readmore {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.readmore a {
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  border-radius: 3px;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
