@@ -1,5 +1,6 @@
 import React from 'react';
 import Constants from '../../Constants';
+import listContent from '../../renderers/list_content';
 import Section from './Section';
 import './SectionMe.css';
 
@@ -29,18 +30,6 @@ export class SectionMe extends Section {
     );
   }
 
-  renderListItems(collection) {
-    const listItems = collection.map((k, i) => {
-      return <li key={i}>{k}</li>
-    });
-
-    return(
-      <ul>
-        {listItems}
-      </ul>
-    );
-  }
-
   renderDayOfBirth() {
     const ageDate = new Date(Date.now() - Constants.author.dob);
     return `${Constants.author.dob.toDateString()} / Age ${Math.abs(ageDate.getUTCFullYear() - 1970)}`;
@@ -51,12 +40,12 @@ export class SectionMe extends Section {
       <div className="section-me">
         <h3 className="title">{Constants.author.name}</h3>
         <div className="role">
-          {this.renderListItems(Constants.author.roles)}
+          {listContent(Constants.author.roles)}
         </div>
         {this.renderDefinitionList("D.O.B / Age", this.renderDayOfBirth)}
-        {this.renderDefinitionList("Language", () => this.renderListItems(Constants.author.languages))}
-        {this.renderDefinitionList("MainSkills", () => this.renderListItems(Constants.author.mainSkills))}
-        {this.renderDefinitionList("SubSkills", () => this.renderListItems(Constants.author.subSkills))}
+        {this.renderDefinitionList("Language", () => listContent(Constants.author.languages))}
+        {this.renderDefinitionList("MainSkills", () => listContent(Constants.author.mainSkills))}
+        {this.renderDefinitionList("SubSkills", () => listContent(Constants.author.subSkills))}
         {this.renderDefinitionList("Hiring", () => <div dangerouslySetInnerHTML={{__html: Constants.author.hiring}} />)}
       </div>
     );
