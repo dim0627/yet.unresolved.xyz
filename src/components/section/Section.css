@@ -2,7 +2,11 @@
   padding: 8rem 0;
 }
 
-.general-section .pane-half {
+.general-section .panes {
+  display: flex;
+}
+
+.general-section .pane {
   width: 50%;
 }
 

@@ -2,17 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles.css';
 import './index.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Hero from './components/Hero';
-import Section from './components/Section';
+import Header from './components/shared/Header';
+import Footer from './components/shared/Footer';
+import Hero from './components/hero/Hero';
+import Section, { SectionMe } from './components/section/Section';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
   <div>
     <Header />
     <Hero />
-    <Section title="Me" />
+    <SectionMe />
     <Section title="Projects" />
     <Section title="Works" />
     <Footer />
