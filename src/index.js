@@ -7,6 +7,7 @@ import Footer from './components/shared/Footer';
 import Hero from './components/hero/Hero';
 import SectionMe from './components/section/SectionMe';
 import SectionProjects from './components/section/SectionProjects';
+import SectionWorks from './components/section/SectionWorks';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
@@ -15,6 +16,7 @@ ReactDOM.render(
     <Hero />
     <SectionMe />
     <SectionProjects />
+    <SectionWorks />
     <Footer />
   </div>,
   document.getElementById('root'));

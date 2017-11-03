@@ -13,12 +13,6 @@ export class SectionMe extends Section {
     };
   }
 
-  renderCollection(skillName, i) {
-    return(
-      <li key={i}>{skillName}</li>
-    );
-  }
-
   renderDefinitionList(title, callback) {
     return(
       <dl>
@@ -46,7 +40,7 @@ export class SectionMe extends Section {
         {this.renderDefinitionList("Language", () => listContent(Constants.author.languages))}
         {this.renderDefinitionList("MainSkills", () => listContent(Constants.author.mainSkills))}
         {this.renderDefinitionList("SubSkills", () => listContent(Constants.author.subSkills))}
-        {this.renderDefinitionList("Hiring", () => <div dangerouslySetInnerHTML={{__html: Constants.author.hiring}} />)}
+        {this.renderDefinitionList("Hiring", () => Constants.author.hiring)}
       </div>
     );
   }

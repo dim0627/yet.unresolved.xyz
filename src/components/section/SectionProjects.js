@@ -16,15 +16,13 @@ export class SectionProjects extends Section {
     const asides = (
       <div className="asides">
         {project.sourceUrl &&
-          <a href="{project.sourceUrl}" target="_blank" rel="nofollow">
-            <i className="fa fa-github fa-fw" aria-hidden="true"></i>
-            <span>GitHub</span>
+          <a href={project.sourceUrl} target="_blank" rel="nofollow">
+            <i className="fa fa-github fa-fw" aria-hidden="true"></i>GitHub
           </a>
         }
         {project.relatedUrl &&
-          <a href="{project.relatedUrl}" target="_blank" rel="nofollow">
-            <i className="fa fa-link fa-fw" aria-hidden="true"></i>
-            <span>Related</span>
+          <a href={project.relatedUrl} target="_blank" rel="nofollow">
+            <i className="fa fa-link fa-fw" aria-hidden="true"></i>Link
           </a>
         }
       </div>
