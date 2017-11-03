@@ -1,8 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './styles.css';
 import './index.css';
-import App from './App';
+import Header from './Header';
+import Footer from './Footer';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <div>
+  <Header />
+  <Footer />
+  </div>,
+  document.getElementById('root'));
 registerServiceWorker();

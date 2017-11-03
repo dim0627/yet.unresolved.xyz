@@ -1,0 +1,14 @@
+.l-footer {
+  padding: 1.5rem 0;
+}
+
+.l-footer .copy {
+  font-weight: 700;
+}
+
+.l-footer .author {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  font-weight: 700;
+}

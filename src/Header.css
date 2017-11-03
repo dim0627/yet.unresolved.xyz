@@ -1,0 +1,52 @@
+.l-header {
+  padding: 4rem 0;
+}
+
+.l-header .logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 3rem;
+}
+
+.l-header .logo a {
+  display: inline-block;
+}
+
+.l-header .ops {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+}
+
+.l-header .ops::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.l-header .ops a {
+  position: relative;
+  float: left;
+  display: block;
+  margin-left: 1.5rem;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 3rem;
+}
+
+.l-header .ops a::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  content: '';
+  width: 20%;
+  height: 3px;
+  background-color: #333;
+  transition-duration: .3s;
+}
+
+.l-header .ops a:hover::after {
+  width: 100%;
+}
