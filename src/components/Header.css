@@ -25,26 +25,26 @@
 }
 
 .l-header .ops a {
-  position: relative;
-  float: left;
   display: block;
+  position: relative;
   margin-left: 1.5rem;
   padding: 0 1rem;
+  float: left;
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 3rem;
 }
 
 .l-header .ops a::after {
+  content: '';
+  display: block;
   position: absolute;
   right: 0;
   bottom: 0;
-  display: block;
-  content: '';
   width: 20%;
   height: 3px;
-  background-color: #333;
   transition-duration: .3s;
+  background-color: #333;
 }
 
 .l-header .ops a:hover::after {
