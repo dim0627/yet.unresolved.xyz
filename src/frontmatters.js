@@ -71,6 +71,33 @@ const Frontmatters = {
     },
   ],
   works: [
+    {
+      title: "Rista, inc.",
+      workingFrom: new Date(2016, 11, 1),
+      role: "Web Developer, SEO Analyist",
+      stacks: ["Ruby", "Ruby on Rails", "ES2015", "MySQL", "ElasticSearch"],
+    },
+    {
+      title: "Pharma Information Network, inc.",
+      workingFrom: new Date(2015, 9, 1),
+      workingTo: new Date(2016, 11, 1),
+      role: "Lead Developer, SEO Analyist",
+      stacks: ["PHP", "Laravel", "Python", "Golang", "Ruby", "Ruby on Rails", "MySQL", "ElasticSearch"],
+    },
+    {
+      title: "MedPeer, inc.",
+      workingFrom: new Date(2015, 2, 1),
+      workingTo: new Date(2015, 9, 1),
+      role: "Web Developer",
+      stacks: ["PHP", "Laravel", "MySQL", "AWS CloudSearch"],
+    },
+    {
+      title: "Kakaku.com, inc.",
+      workingFrom: new Date(2014, 7, 1),
+      workingTo: new Date(2015, 1, 1),
+      role: "Web Developer",
+      stacks: ["C#", "VB Script", "SQL Server"],
+    },
   ],
 };
 

@@ -50,3 +50,16 @@
 .l-header .ops a:hover::after {
   width: 100%;
 }
+
+@media (max-width: 767px) {
+  .l-header .ops {
+    position: static;
+    margin-top: 2rem;
+  }
+
+  .l-header .ops a {
+    max-width: 6rem;
+    margin: 0 0 0 auto;
+    float: none;
+  }
+}

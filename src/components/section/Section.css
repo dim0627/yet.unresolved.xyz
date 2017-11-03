@@ -12,7 +12,6 @@
 }
 
 .general-section .section-title {
-  display: inline-block;
   position: relative;
   padding: 0 .5rem 0 4rem;
   font-size: 3rem;
@@ -29,4 +28,18 @@
   width: 5px;
   transform: perspective(200px) rotateX(-45deg) rotate(-10deg);
   background-color: #333;
+}
+
+@media (max-width: 767px) {
+  .general-section .section-title {
+    margin-bottom: 3rem;
+  }
+
+  .general-section .panes {
+    display: block;
+  }
+
+  .general-section .pane {
+    width: 100%;
+  }
 }

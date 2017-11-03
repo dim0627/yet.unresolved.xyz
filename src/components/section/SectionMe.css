@@ -24,6 +24,7 @@
 
 .section-me li {
   display: inline;
+  line-height: 1.5rem;
 }
 
 .section-me li::after {
