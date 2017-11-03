@@ -4,27 +4,28 @@
 
 .general-section .panes {
   display: flex;
+  align-items: center;
 }
 
 .general-section .pane {
   width: 50%;
 }
 
-.general-section .title {
+.general-section .section-title {
   display: inline-block;
   position: relative;
-  padding: 0 .5rem 0 2rem;
+  padding: 0 .5rem 0 4rem;
   font-size: 3rem;
   line-height: 4rem;
 }
 
-.general-section .title::before {
+.general-section .section-title::before {
   content: '';
   display: block;
   position: absolute;
   top: -3rem;
   bottom: -1.5rem;
-  left: -2rem;
+  left: 1rem;
   width: 5px;
   transform: rotate(-15deg);
   background-color: #333;

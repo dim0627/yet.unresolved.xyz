@@ -1,0 +1,35 @@
+.section-me .title {
+  margin-bottom: .5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+}
+
+.section-me .role {
+  margin-bottom: 2rem;
+}
+
+.section-me dl {
+  margin: 1.5rem 0;
+}
+
+.section-me dt {
+  font-weight: 700;
+}
+
+.section-me dd {
+  margin: .5rem 0 0;
+  padding-left: 2rem;
+}
+
+.section-me li {
+  display: inline;
+}
+
+.section-me li::after {
+  content: ', ';
+}
+
+.section-me li:last-child::after {
+  content: '';
+}

@@ -19,7 +19,7 @@ class Section extends Component {
 
           <div className="panes">
             <div className="pane">
-              <h2 className="title">{this.state.title}</h2>
+              <h2 className="section-title">{this.state.title}</h2>
             </div>
 
             <div className="pane">
@@ -29,22 +29,6 @@ class Section extends Component {
 
         </div>
       </section>
-    );
-  }
-}
-
-export class SectionMe extends Section {
-  constructor(props) {
-    super(props);
-    this.state = {
-      title: "Me",
-    };
-  }
-
-  renderBody() {
-    return (
-      <div className="section-me">
-      </div>
     );
   }
 }
