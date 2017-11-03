@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Constants from '../../Constants';
+import Frontmatters from '../../frontmatters';
 import './Hero.css';
 
 class Hero extends Component {
@@ -7,7 +7,7 @@ class Hero extends Component {
     return (
       <section className="hero">
         <div className="l-container">
-          <h1 className="title">{Constants.motto}</h1>
+          <h1 className="title">{Frontmatters.motto}</h1>
         </div>
       </section>
     );

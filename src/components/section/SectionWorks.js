@@ -1,5 +1,5 @@
 import React from 'react';
-import Constants from '../../Constants';
+import Frontmatters from '../../frontmatters';
 import listContent from '../../renderers/list_content';
 import Section from './Section';
 import './SectionWorks.css';

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Constants = {
+const Frontmatters = {
   site_name: "Unresolved",
   motto: (
     <div>Unresolved today,<br />Resolved in tomorrow.</div>
@@ -70,6 +70,8 @@ const Constants = {
       index: true,
     },
   ],
+  works: [
+  ],
 };
 
-export default Constants;
+export default Frontmatters;

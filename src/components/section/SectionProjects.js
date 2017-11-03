@@ -1,5 +1,5 @@
 import React from 'react';
-import Constants from '../../Constants';
+import Frontmatters from '../../frontmatters';
 import Section from './Section';
 import './SectionProjects.css';
 
@@ -41,7 +41,7 @@ export class SectionProjects extends Section {
     return (
       <div>
         <div className="section-projects">
-          {Constants.projects.filter((p) => p.index).map(this.renderProject)}
+          {Frontmatters.projects.filter((p) => p.index).map(this.renderProject)}
         </div>
         <div className="readmore">
           <a href="/projects">See All Projects</a>

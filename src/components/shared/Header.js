@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Constants from '../../Constants';
+import Frontmatters from '../../frontmatters';
 import './Header.css';
 
 class Header extends Component {
@@ -7,7 +7,7 @@ class Header extends Component {
     return (
       <header className="l-header">
         <div className="l-container">
-          <div className="logo"><a href="/">{Constants.site_name}</a></div>
+          <div className="logo"><a href="/">{Frontmatters.site_name}</a></div>
           <div className="ops">
             <a href="#me">Me</a>
             <a href="#projects">Projects</a>
