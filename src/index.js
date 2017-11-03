@@ -12,7 +12,9 @@ ReactDOM.render(
   <div>
   <Header />
   <Hero />
-  <Section />
+  <Section title="Me" />
+  <Section title="Projects" />
+  <Section title="Works" />
   <Footer />
   </div>,
   document.getElementById('root'));

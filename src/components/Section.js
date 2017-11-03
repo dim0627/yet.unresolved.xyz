@@ -9,9 +9,7 @@ class Section extends Component {
       <div className="l-container">
 
       <div class="pane-half">
-      <h2 className="title">
-      <span>Me</span>
-      </h2>
+      <h2 className="title">{this.props.title}</h2>
       </div>
 
       <div class="pane-half">
