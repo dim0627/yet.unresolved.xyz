@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Constants from './Constants';
+import Constants from '../Constants';
 import './Header.css';
 
 class Header extends Component {
