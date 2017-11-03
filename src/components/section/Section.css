@@ -24,9 +24,9 @@
   display: block;
   position: absolute;
   top: -3rem;
-  bottom: -1.5rem;
+  bottom: -2rem;
   left: 1rem;
   width: 5px;
-  transform: rotate(-15deg);
+  transform: perspective(200px) rotateX(-45deg) rotate(-10deg);
   background-color: #333;
 }

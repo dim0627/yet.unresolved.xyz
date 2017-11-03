@@ -1,3 +1,13 @@
+::-moz-selection {
+  background: #333;
+  color: #fff;
+}
+
+::selection {
+  background: #333;
+  color: #fff;
+}
+
 html {
   font-size: 16px;
 }
