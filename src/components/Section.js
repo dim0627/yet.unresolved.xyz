@@ -6,8 +6,17 @@ class Section extends Component {
   render() {
     return (
       <section className="general-section">
-      <div class="l-container">
-      <h2 className="title">Me</h2>
+      <div className="l-container">
+
+      <div class="pane-half">
+      <h2 className="title">
+      <span>Me</span>
+      </h2>
+      </div>
+
+      <div class="pane-half">
+      </div>
+
       </div>
       </section>
     );

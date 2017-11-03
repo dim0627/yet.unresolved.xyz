@@ -1,4 +1,31 @@
+.general-section {
+  padding: 8rem 0;
+}
+
+.general-section .pane-half {
+  width: 50%;
+}
+
 .general-section .title {
+  text-align: center;
+}
+
+.general-section .title span {
+  position: relative;
+  display: inline-block;
+  padding: 0 .5rem 0 2rem;
   font-size: 3rem;
   line-height: 4rem;
+}
+
+.general-section .title span::before {
+  position: absolute;
+  content: '';
+  display: block;
+  top: -3rem;
+  bottom: -1.5rem;
+  left: -2rem;
+  width: 5px;
+  background-color: #333;
+  transform: rotate(-15deg);
 }

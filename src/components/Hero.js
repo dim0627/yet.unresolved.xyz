@@ -6,7 +6,7 @@ class Hero extends Component {
   render() {
     return (
       <section className="hero">
-      <div class="l-container">
+      <div className="l-container">
       <h1 className="title" dangerouslySetInnerHTML={{__html: Constants.motto}} />
       </div>
       </section>
