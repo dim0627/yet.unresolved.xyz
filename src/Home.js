@@ -1,28 +1,24 @@
 import React, { Component } from 'react';
-import Header from './components/shared/Header';
-import Footer from './components/shared/Footer';
 import Section from './components/Section';
 import Hero from './components/Hero';
-import Me from './components/Me';
-import Projects from './components/Projects';
-import Works from './components/Works';
+import MeStack from './components/MeStack';
+import ProjectStack from './components/ProjectStack';
+import WorkStack from './components/WorkStack';
 
 class Home extends Component {
   render() {
     return (
       <div>
-        <Header />
         <Hero />
         <Section sectionId="me" sectionTitle="Me">
-          <Me />
+          <MeStack />
         </Section>
         <Section sectionId="projects" sectionTitle="Projects">
-          <Projects />
+          <ProjectStack />
         </Section>
         <Section sectionId="works" sectionTitle="Works">
-          <Works />
+          <WorkStack />
         </Section>
-        <Footer />
       </div>
     );
   }

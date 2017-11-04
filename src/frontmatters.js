@@ -66,7 +66,7 @@ const Frontmatters = {
       index: false,
     },
     {
-      title: "Private Rails Project",
+      title: "Private Web Project",
       descriptionShort: (
         <div>
           <p>Part-time job listing service for not large organizations such as personal store.</p>

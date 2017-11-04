@@ -66,6 +66,10 @@ section {
   padding: 0 1rem;
 }
 
+.l-container.narrow {
+  max-width: 40rem;
+}
+
 .readmore {
   margin-top: 3rem;
   text-align: center;

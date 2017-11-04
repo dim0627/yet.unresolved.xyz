@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Frontmatters from '../frontmatters';
-import './Projects.css';
+
+import Frontmatters from './frontmatters';
 
 function renderProject(project, i) {
   const asides = (
@@ -19,7 +19,7 @@ function renderProject(project, i) {
   );
 
   return(
-    <article key={i} className="project">
+    <article key={i} className="project-panel">
       <h3 className="title">{project.title}</h3>
       <div className="description">{project.descriptionShort}</div>
       {asides}
@@ -30,12 +30,9 @@ function renderProject(project, i) {
 class Projects extends Component {
   render() {
     return (
-      <div>
+      <div class="l-container narrow">
         <div className="section-projects">
           {Frontmatters.projects.filter((p) => p.index).map(renderProject)}
-        </div>
-        <div className="readmore">
-          <a href="/projects">See All Projects</a>
         </div>
       </div>
     );
