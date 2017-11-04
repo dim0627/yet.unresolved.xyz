@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom'
 import './styles.css';
 import './index.css';
 import Header from './components/shared/Header';
@@ -11,13 +12,13 @@ import SectionWorks from './components/section/SectionWorks';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
-  <div>
+  <Router>
     <Header />
     <Hero />
     <SectionMe />
     <SectionProjects />
     <SectionWorks />
     <Footer />
-  </div>,
+  </Router>,
   document.getElementById('root'));
 registerServiceWorker();
