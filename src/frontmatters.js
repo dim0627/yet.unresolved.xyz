@@ -7,6 +7,7 @@ const Frontmatters = {
   ),
   author: {
     name: "Daisuke Tsuji",
+    email: "dim0627@gmail.com",
     dob: new Date(1989, 1, 26),
     roles: ["Web Developer", "Markup Developer", "SEO Analyst", ],
     languages: ["Japanese", "English(Learning)", ],
@@ -18,6 +19,12 @@ const Frontmatters = {
       <p>I'm looking for developer positions in startups in English speaking countries.</p>
     </div>
     ),
+    social: {
+      github: "https://github.com/dim0627",
+      twitter: "https://twitter.com/dim0627",
+      linkedin: "https://www.linkedin.com/in/daisuke-tsuji-2a379a118",
+      facebook: "https://www.facebook.com/daisuke.tsuji.735",
+    }
   },
   projects: [
     {
@@ -73,28 +80,28 @@ const Frontmatters = {
   works: [
     {
       title: "Rista, inc.",
-      workingFrom: new Date(2016, 11, 1),
+      workingFrom: new Date(2016, 10, 1),
       role: "Web Developer, SEO Analyist",
       stacks: ["Ruby", "Ruby on Rails", "ES2015", "MySQL", "ElasticSearch"],
     },
     {
       title: "Pharma Information Network, inc.",
-      workingFrom: new Date(2015, 9, 1),
-      workingTo: new Date(2016, 11, 1),
+      workingFrom: new Date(2015, 8, 1),
+      workingTo: new Date(2016, 10, 1),
       role: "Lead Developer, SEO Analyist",
       stacks: ["PHP", "Laravel", "Python", "Golang", "Ruby", "Ruby on Rails", "MySQL", "ElasticSearch"],
     },
     {
       title: "MedPeer, inc.",
-      workingFrom: new Date(2015, 2, 1),
-      workingTo: new Date(2015, 9, 1),
+      workingFrom: new Date(2015, 1, 1),
+      workingTo: new Date(2015, 8, 1),
       role: "Web Developer",
       stacks: ["PHP", "Laravel", "MySQL", "AWS CloudSearch"],
     },
     {
       title: "Kakaku.com, inc.",
-      workingFrom: new Date(2014, 7, 1),
-      workingTo: new Date(2015, 1, 1),
+      workingFrom: new Date(2014, 6, 1),
+      workingTo: new Date(2015, 0, 1),
       role: "Web Developer",
       stacks: ["C#", "VB Script", "SQL Server"],
     },

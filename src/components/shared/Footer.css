@@ -4,11 +4,24 @@
 
 .l-footer .copy {
   font-weight: 700;
+  line-height: 2rem;
 }
 
-.l-footer .author {
+.l-footer .social {
   position: absolute;
   top: 0;
   right: 1rem;
-  font-weight: 700;
+}
+
+.l-footer .social a {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.l-footer .social i {
+  line-height: 2rem;
 }
