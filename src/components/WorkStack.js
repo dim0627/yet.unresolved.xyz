@@ -6,9 +6,9 @@ import './WorkStack.css';
 
 class WorkStack extends Component {
   render() {
-    const works = Frontmatters.works.map((work) => {
+    const works = Frontmatters.works.map((work, i) => {
       return (
-        <article className="work">
+        <article key={i} className="work">
           {<div className="date">{work.workingTo ? work.workingTo.toDateString() : "Now"}</div>}
           <div className="details">
             <div className="role">{work.role}</div>

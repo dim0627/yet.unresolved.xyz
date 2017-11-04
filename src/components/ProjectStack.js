@@ -8,7 +8,8 @@ class ProjectStack extends Component {
   render() {
     const projects = Frontmatters.projects.filter((p) => p.index).map((project) => {
       return (
-        <Project title={project.title}
+        <Project key={project.title}
+          title={project.title}
           descriptionShort={project.descriptionShort}
           sourceUrl={project.sourceUrl}
           relatedUrl={project.relatedUrl} />
