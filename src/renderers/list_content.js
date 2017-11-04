@@ -2,7 +2,7 @@ import React from 'react';
 
 function listContent(collection) {
   const listItems = collection.map((k, i) => {
-    return <li key={i}>{k}</li>
+    return <li>{k}</li>
   });
 
   return(

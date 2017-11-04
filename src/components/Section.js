@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+
 import './Section.css';
+import PageHeader from './PageHeader';
 
 class Section extends Component {
   render() {
@@ -9,7 +11,7 @@ class Section extends Component {
 
           <div className="panes">
             <div className="pane">
-              <h2 className="section-title">{this.props.sectionTitle}</h2>
+              <PageHeader title={this.props.sectionTitle} />
             </div>
 
             <div className="pane">

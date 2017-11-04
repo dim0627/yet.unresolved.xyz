@@ -8,7 +8,7 @@ class WorkStack extends Component {
   render() {
     const works = Frontmatters.works.map((work) => {
       return (
-        <article key={work.title} className="work">
+        <article className="work">
           {<div className="date">{work.workingTo ? work.workingTo.toDateString() : "Now"}</div>}
           <div className="details">
             <div className="role">{work.role}</div>

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import './Project.css';
 
-
 class Project extends Component {
   render() {
     const asides = (
@@ -22,7 +21,7 @@ class Project extends Component {
     );
 
     return(
-      <article key={this.props.title} className="project">
+      <article className="project">
         <h3 className="title">{this.props.title}</h3>
         <div className="description">{this.props.descriptionShort}</div>
         {asides}

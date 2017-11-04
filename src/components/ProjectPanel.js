@@ -21,7 +21,7 @@ class ProjectPanel extends Component {
     );
 
     return(
-      <article key={this.props.title} className="project-panel">
+      <article className="project-panel">
         <h2 className="title">{this.props.title}</h2>
         <div className="description">{this.props.descriptionShort}</div>
         {asides}
