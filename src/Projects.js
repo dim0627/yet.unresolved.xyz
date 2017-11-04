@@ -12,7 +12,8 @@ class Projects extends Component {
           title={project.title}
           descriptionShort={project.descriptionShort}
           sourceUrl={project.sourceUrl}
-          relatedUrl={project.relatedUrl} />
+          relatedUrl={project.relatedUrl}
+          stack={project.stack} />
       );
     });
 

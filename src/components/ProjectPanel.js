@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import listContent from '../renderers/list_content';
 import './ProjectPanel.css';
 
 class ProjectPanel extends Component {
@@ -23,6 +24,9 @@ class ProjectPanel extends Component {
     return(
       <article className="project-panel">
         <h2 className="title">{this.props.title}</h2>
+        <div className="stack">
+          {listContent(this.props.stack)}
+        </div>
         <div className="description">{this.props.descriptionShort}</div>
         {asides}
       </article>

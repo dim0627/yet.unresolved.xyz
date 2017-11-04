@@ -14,7 +14,7 @@ class WorkStack extends Component {
             <div className="role">{work.role}</div>
             <h3 className="title">{work.title}</h3>
             <div className="stack">
-              {listContent(work.stacks)}
+              {listContent(work.stack)}
             </div>
           </div>
           <div className="date">{work.workingFrom.toDateString()}</div>
