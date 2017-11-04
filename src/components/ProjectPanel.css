@@ -1,36 +1,36 @@
-.project {
+.project-panel {
   margin-bottom: 3rem;
 }
 
-.project .title {
+.project-panel .title {
   margin-bottom: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
-  line-height: 1.5rem;
+  line-height: 2rem;
 }
 
-.project .description p {
+.project-panel .description p {
   margin: .25rem 0;
   line-height: 1.25rem;
 }
 
-.project .asides {
+.project-panel .asides {
   margin-top: 1rem;
 }
 
-.project .asides::after {
+.project-panel .asides::after {
   content: '';
   display: block;
   clear: both;
 }
 
-.project .asides a {
+.project-panel .asides a {
   display: block;
   margin-right: 1rem;
   float: left;
 }
 
-.project .asides i {
+.project-panel .asides i {
   margin-right: .25rem;
   font-size: 1.2rem;
 }

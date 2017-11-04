@@ -1,0 +1,36 @@
+.project {
+  margin-bottom: 3rem;
+}
+
+.project .title {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+.project .description p {
+  margin: .25rem 0;
+  line-height: 1.25rem;
+}
+
+.project .asides {
+  margin-top: 1rem;
+}
+
+.project .asides::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.project .asides a {
+  display: block;
+  margin-right: 1rem;
+  float: left;
+}
+
+.project .asides i {
+  margin-right: .25rem;
+  font-size: 1.2rem;
+}

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 
 import Frontmatters from '../frontmatters';
-import './ProjectStack.css';
 import Project from './Project';
 
 class ProjectStack extends Component {
