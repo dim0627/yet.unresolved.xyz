@@ -108,6 +108,12 @@ const Frontmatters = {
     },
     {
       title: "Hugo Theme Beg",
+      descriptionShort: (
+        <div>
+          <p>Bootstrap based theme for Hugo.</p>
+          <p>For beginners of Hugo theme createors skeleton who want to using Bootstrap.</p>
+        </div>
+      ),
       stack: ["Hugo", "Go html/template", "Responsive Web Design", "Bootstrap"],
       sourceUrl: "https://github.com/dim0627/hugo_theme_beg",
       relatedUrl: "https://themes.gohugo.io/beg/",
