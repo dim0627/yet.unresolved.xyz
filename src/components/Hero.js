@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Frontmatters from '../../frontmatters';
+import Frontmatters from '../frontmatters';
 import './Hero.css';
 
 class Hero extends Component {
