@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import registerServiceWorker from './registerServiceWorker';
 
 import './styles.css';
@@ -14,9 +14,11 @@ ReactDOM.render(
   <Router>
     <div>
       <Header />
-      <Route exact path="/" component={Home}/>
-      <Route path="/projects" component={Projects}/>
-      <Route component={NoMatch}/>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/projects" component={Projects} />
+        <Route component={NoMatch} />
+      </Switch>
       <Footer />
     </div>
   </Router>,
