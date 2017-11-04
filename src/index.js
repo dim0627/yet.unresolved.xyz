@@ -8,6 +8,7 @@ import Header from './components/shared/Header';
 import Footer from './components/shared/Footer';
 import Home from './Home';
 import Projects from './Projects';
+import NoMatch from './NoMatch';
 
 ReactDOM.render(
   <Router>
@@ -15,6 +16,7 @@ ReactDOM.render(
       <Header />
       <Route exact path="/" component={Home}/>
       <Route path="/projects" component={Projects}/>
+      <Route component={NoMatch}/>
       <Footer />
     </div>
   </Router>,
