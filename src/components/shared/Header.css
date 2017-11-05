@@ -15,7 +15,7 @@
 .l-header .ops {
   position: absolute;
   top: 0;
-  right: 1rem;
+  right: 1.5rem;
 }
 
 .l-header .ops::after {
