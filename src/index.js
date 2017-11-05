@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
+import 'font-awesome/css/font-awesome.css'
 import {Helmet} from "react-helmet";
 
 import registerServiceWorker from './registerServiceWorker';
