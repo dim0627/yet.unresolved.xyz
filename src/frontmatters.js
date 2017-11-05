@@ -111,7 +111,7 @@ const Frontmatters = {
       descriptionShort: (
         <div>
           <p>Bootstrap based theme for Hugo.</p>
-          <p>For beginners of Hugo theme createors skeleton who want to using Bootstrap.</p>
+          <p>Theme skeleton for beginners of Hugo theme createors who want to using Bootstrap.</p>
         </div>
       ),
       stack: ["Hugo", "Go html/template", "Responsive Web Design", "Bootstrap"],
