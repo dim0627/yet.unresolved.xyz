@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import {Helmet} from "react-helmet";
 
@@ -6,32 +6,17 @@ import Frontmatters from './frontmatters';
 import ProjectPanel from './components/ProjectPanel';
 import PageHeader from './components/PageHeader';
 
-class Projects extends Component {
-  render() {
-    const projects = Frontmatters.projects.map((project) => {
-      return (
-        <ProjectPanel key={project.title}
-          title={project.title}
-          descriptionShort={project.descriptionShort}
-          sourceUrl={project.sourceUrl}
-          relatedUrl={project.relatedUrl}
-          stack={project.stack} />
-      );
-    });
-
-    return (
-      <div className="l-container narrow">
-        <Helmet>
-          <title>Projects - Daisuke Tsuji</title>
-          <link rel="canonical" href={`${Frontmatters.base_url}/projects`} />
-        </Helmet>
-        <PageHeader title="Projects" additionalClass="page" />
-        <div className="section-projects">
-          {projects}
-        </div>
-      </div>
-    );
-  }
-}
+const Projects = () => (
+  <div className="l-container narrow">
+    <Helmet>
+      <title>Projects - Daisuke Tsuji</title>
+      <link rel="canonical" href={`${Frontmatters.base_url}/projects`} />
+    </Helmet>
+    <PageHeader title="Projects" additionalClass="page" />
+    <div className="section-projects">
+      {Frontmatters.projects.map(p => <ProjectPanel {...p} />)}
+    </div>
+  </div>
+);
 
 export default Projects;

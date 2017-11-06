@@ -1,40 +1,37 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Frontmatters from '../frontmatters';
-import listContent from '../renderers/list_content';
+import DefinitionList from '../renderers/definition_list';
+import ListContent from '../renderers/list_content';
 import './MeStack.css';
 
-function renderDefinitionList(title, body) {
-  return(
-    <dl>
-      <dt>{title}</dt>
-      <dd>
-        {body}
-      </dd>
-    </dl>
-  );
+const calcAge = () => {
+  const ageDate = new Date(Date.now() - Frontmatters.author.dob);
+  return `${Frontmatters.author.dob.toDateString()} / Age ${Math.abs(ageDate.getUTCFullYear() - 1970)}`;
 }
 
-class MeStack extends Component {
-  render() {
-    // Day of Birth
-    const ageDate = new Date(Date.now() - Frontmatters.author.dob);
-    const dayOfBirth = `${Frontmatters.author.dob.toDateString()} / Age ${Math.abs(ageDate.getUTCFullYear() - 1970)}`;
-
-    return (
-      <div className="section-me">
-        <h3 className="title">{Frontmatters.author.name}</h3>
-        <div className="role">
-          {listContent(Frontmatters.author.roles)}
-        </div>
-        {renderDefinitionList("D.O.B / Age", dayOfBirth)}
-        {renderDefinitionList("Language", listContent(Frontmatters.author.languages))}
-        {renderDefinitionList("MainSkills", listContent(Frontmatters.author.mainSkills))}
-        {renderDefinitionList("SubSkills", listContent(Frontmatters.author.subSkills))}
-        {renderDefinitionList("Hiring", Frontmatters.author.hiring)}
-      </div>
-    );
-  }
-}
+const MeStack = () => (
+  <div className="section-me">
+    <h3 className="title">{Frontmatters.author.name}</h3>
+    <div className="role">
+      <ListContent collection={Frontmatters.author.roles} />
+    </div>
+    <DefinitionList title="D.O.B / Age">
+      {calcAge()}
+    </DefinitionList>
+    <DefinitionList title="Language">
+      <ListContent collection={Frontmatters.author.languages} />
+    </DefinitionList>
+    <DefinitionList title="MainSkills">
+      <ListContent collection={Frontmatters.author.mainSkills} />
+    </DefinitionList>
+    <DefinitionList title="SubSkills">
+      <ListContent collection={Frontmatters.author.subSkills} />
+    </DefinitionList>
+    <DefinitionList title="SubSkills">
+      {Frontmatters.author.hiring}
+    </DefinitionList>
+  </div>
+);
 
 export default MeStack;

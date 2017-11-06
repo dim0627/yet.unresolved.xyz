@@ -1,15 +1,9 @@
 import React from 'react';
 
-function listContent(collection) {
-  const listItems = collection.map((k, i) => {
-    return <li key={i}>{k}</li>
-  });
+const ListContent = (collection) => (
+  <ul>
+    {collection.map((k, i) => <li key={i}>{k}</li>)}
+  </ul>
+);
 
-  return(
-    <ul>
-      {listItems}
-    </ul>
-  );
-}
-
-export default listContent;
+export default ListContent;

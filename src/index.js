@@ -43,5 +43,7 @@ ReactDOM.render(
       </div>
     </ScrollToTop>
   </Router>,
-  document.getElementById('root'));
+  document.getElementById('root')
+);
+
 registerServiceWorker();
