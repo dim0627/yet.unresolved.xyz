@@ -70,6 +70,10 @@ section {
   max-width: 40rem;
 }
 
+.l-container.error {
+  padding: 8rem 0;
+}
+
 .readmore {
   margin-top: 3rem;
   text-align: center;
