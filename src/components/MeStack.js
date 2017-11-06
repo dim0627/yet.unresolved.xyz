@@ -28,7 +28,7 @@ const MeStack = () => (
     <DefinitionList title="SubSkills">
       <ListContent collection={Frontmatters.author.subSkills} />
     </DefinitionList>
-    <DefinitionList title="SubSkills">
+    <DefinitionList title="Hiring">
       {Frontmatters.author.hiring}
     </DefinitionList>
   </div>
