@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ListContent = (collection) => (
+const ListContent = ({collection}) => (
   <ul>
     {collection.map((k, i) => <li key={i}>{k}</li>)}
   </ul>

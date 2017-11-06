@@ -7,8 +7,8 @@ import Project from './Project';
 const ProjectStack = () => (
   <div>
     <div className="section-projects">
-      {Frontmatters.projects.filter((p) => p.index).map((p) =>
-        <Project {...p} />
+      {Frontmatters.projects.filter((p) => p.index).map((p, i) =>
+        <Project key={i} {...p} />
       )}
     </div>
     <div className="readmore">

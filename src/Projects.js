@@ -14,7 +14,7 @@ const Projects = () => (
     </Helmet>
     <PageHeader title="Projects" additionalClass="page" />
     <div className="section-projects">
-      {Frontmatters.projects.map(p => <ProjectPanel {...p} />)}
+      {Frontmatters.projects.map((p, i) => <ProjectPanel key={i} {...p} />)}
     </div>
   </div>
 );
