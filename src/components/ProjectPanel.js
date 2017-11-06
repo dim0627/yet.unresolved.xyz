@@ -19,7 +19,7 @@ const ProjectPanel = ({title, stack, descriptionShort, sourceUrl, relatedUrl}) =
           </a>
         }
         {relatedUrl &&
-          <a href={relatedUrl} target="_blank" rel="nofollow">
+          <a href={relatedUrl} target="_blank">
             <i className="fa fa-link fa-fw" aria-hidden="true"></i>Link
           </a>
         }
