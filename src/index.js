@@ -11,8 +11,8 @@ import Frontmatters from './frontmatters';
 import './styles.css';
 import Header from './components/shared/Header';
 import Footer from './components/shared/Footer';
-import Home from './Home';
-import Projects from './Projects';
+import Home from './containers/Home';
+import Projects from './containers/Projects';
 import NoMatch from './NoMatch';
 
 class ScrollToTop extends Component {

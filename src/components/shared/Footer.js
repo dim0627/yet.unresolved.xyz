@@ -2,6 +2,7 @@ import React from 'react';
 import Frontmatters from '../../frontmatters';
 import './Footer.css';
 
+/* eslint jsx-a11y/anchor-has-content: 0 */
 const Footer = () => (
   <footer className="l-footer">
     <div className="l-container">

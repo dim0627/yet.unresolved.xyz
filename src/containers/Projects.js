@@ -2,9 +2,9 @@ import React from 'react';
 
 import {Helmet} from "react-helmet";
 
-import Frontmatters from './frontmatters';
-import ProjectPanel from './components/ProjectPanel';
-import PageHeader from './components/PageHeader';
+import Frontmatters from '../frontmatters';
+import ProjectPanel from '../components/ProjectPanel';
+import PageHeader from '../components/PageHeader';
 
 const Projects = () => (
   <div className="l-container narrow">
