@@ -4,7 +4,6 @@ import ListContent from '../renderers/list_content';
 import {Helmet} from "react-helmet";
 
 import Frontmatters from '../frontmatters';
-import PageHeader from '../components/PageHeader';
 
 import './NameCard.css';
 
@@ -14,7 +13,6 @@ const NameCard = () => (
       <title>NameCard - Daisuke Tsuji</title>
       <link rel="canonical" href={`${Frontmatters.base_url}/nameCard`} />
     </Helmet>
-    <PageHeader title="NameCard" additionalClass="page" />
     <section className="general-section">
 
       <div className="panes">
