@@ -1,4 +1,6 @@
 import React from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
+
 import Frontmatters from '../../frontmatters';
 import './Header.css';
 
@@ -7,9 +9,9 @@ const Header = () => (
     <div className="l-container">
       <div className="logo"><a href="/">{Frontmatters.site_name}</a></div>
       <div className="ops">
-        <a href="/#me">Me</a>
-        <a href="/#projects">Projects</a>
-        <a href="/#works">Works</a>
+        <Link to="/#me">Me</Link>
+        <Link to="/#projects">Projects</Link>
+        <Link to="/#works">Works</Link>
       </div>
     </div>
   </header>

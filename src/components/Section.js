@@ -4,7 +4,7 @@ import './Section.css';
 import PageHeader from './PageHeader';
 
 const Section = ({sectionId, sectionTitle, children}) => (
-  <section id={sectionId} className="general-section">
+  <section id={sectionId} name={sectionId} className="general-section">
     <div className="l-container">
 
       <div className="panes">

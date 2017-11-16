@@ -11,6 +11,7 @@
     "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
+    "react-router-hash-link": "^1.1.1",
     "react-scripts": "1.0.16",
     "stylelint": "^8.2.0",
     "stylelint-config-property-sort-order-smacss": "^2.0.0"
