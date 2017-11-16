@@ -21,13 +21,12 @@
 }
 
 .name-card .roles {
-  margin-bottom: .25rem;
+  margin-bottom: .5rem;
   font-size: .7rem;
 }
 
 .name-card .roles li {
   display: inline;
-  line-height: 1.5rem;
 }
 
 .name-card .roles li::after {
