@@ -1,0 +1,111 @@
+.name-card {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 91mm;
+  height: 55mm;
+  margin: 2rem auto;
+  padding: 1rem;
+  box-shadow: rgba(220, 176, 1, .5) 0 1rem 3.6rem;
+}
+
+.name-card .body,
+.name-card .aside {
+  padding-left: 1rem;
+}
+
+.name-card .aside {
+  font-size: .7rem;
+}
+
+.name-card .roles {
+  margin-bottom: .5rem;
+  font-size: .7rem;
+}
+
+.name-card .roles li {
+  display: inline;
+  line-height: 1.5rem;
+}
+
+.name-card .roles li::after {
+  content: ', ';
+}
+
+.name-card .roles li:last-child::after {
+  content: '';
+}
+
+.name-card .title {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  line-height: 1.75rem;
+}
+
+.name-card .contact {
+  line-height: 1.25rem;
+}
+
+.name-card .property {
+  font-size: .8rem;
+  line-height: 1.25rem;
+}
+
+.name-card .property::before,
+.name-card .property::after {
+  color: #fff;
+  font-family: monospace;
+  text-shadow: 1px 1px 0 rgba(220, 176, 1, .5);
+}
+
+.name-card .property.gh::before { content: 'github\: \''; }
+.name-card .property.tw::before { content: 'twitter\: \''; }
+.name-card .property.fb::before { content: 'facebook\: \''; }
+.name-card .property.li::before { content: 'linkedin\: \''; }
+.name-card .property.mc::before { content: 'background-color\: '; }
+.name-card .property.bc::before { content: 'color\: '; }
+
+.name-card .property::after {
+  content: '\'\;';
+}
+
+.name-card .property.mc::after,
+.name-card .property.bc::after {
+  content: '\;';
+}
+
+.name-card::before,
+.name-card::after {
+  position: absolute;
+  left: 1rem;
+  color: #fff;
+  font-family: monospace;
+  font-size: .8rem;
+  text-shadow: 1px 1px 0 rgba(220, 176, 1, .5);
+}
+
+.name-card::before {
+  top: 1rem;
+}
+
+.name-card::after {
+  bottom: 1rem;
+}
+
+.name-card.front::before {
+  content: '<html>';
+}
+
+.name-card.front::after {
+  content: '</html>';
+}
+
+.name-card.back::before {
+  content: '.name-card \{';
+}
+
+.name-card.back::after {
+  content: '\}';
+}

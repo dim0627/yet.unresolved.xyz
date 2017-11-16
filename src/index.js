@@ -13,6 +13,7 @@ import Header from './components/shared/Header';
 import Footer from './components/shared/Footer';
 import Home from './containers/Home';
 import Projects from './containers/Projects';
+import NameCard from './containers/NameCard';
 import NoMatch from './NoMatch';
 
 class ScrollToTop extends Component {
@@ -37,6 +38,7 @@ ReactDOM.render(
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/projects" component={Projects} />
+          <Route path="/nameCard" component={NameCard} />
           <Route component={NoMatch} />
         </Switch>
         <Footer />

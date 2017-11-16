@@ -3,12 +3,16 @@ import React from 'react';
 const Frontmatters = {
   site_name: "Unresolved",
   base_url: "https://yet.unresolved.xyz",
+  mainColor: "#fdce12",
+  accentColor: "",
+  baseColor: "#333",
   motto: (
     <div>Unresolved today,<br />Resolved in tomorrow.</div>
   ),
   author: {
     name: "Daisuke Tsuji",
     email: "dim0627@gmail.com",
+    phoneNumber: "090-5991-6692",
     dob: new Date(1989, 1, 26),
     roles: ["Web Developer", "Markup Developer", "SEO Analyst", ],
     languages: ["Japanese", "English(Learning)", ],
@@ -22,9 +26,13 @@ const Frontmatters = {
     ),
     social: {
       github: "https://github.com/dim0627",
+      github_id: "dim0627",
       twitter: "https://twitter.com/dim0627",
+      twitter_id: "dim0627",
       linkedin: "https://www.linkedin.com/in/daisuke-tsuji-2a379a118",
+      linkedin_id: "daisuke-tsuji-2a379a118",
       facebook: "https://www.facebook.com/daisuke.tsuji.735",
+      facebook_id: "daisuke.tsuji.735",
     }
   },
   projects: [
