@@ -17,7 +17,7 @@
 }
 
 .name-card .aside {
-  font-size: .7rem;
+  font-size: .6rem;
 }
 
 .name-card .roles {
@@ -46,7 +46,6 @@
 
 .name-card .contact {
   font-family: menlo, monospace;
-  line-height: 1.25rem;
 }
 
 .name-card .property {

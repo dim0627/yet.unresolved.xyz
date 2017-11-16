@@ -26,8 +26,9 @@ const NameCard = () => (
               <h2 className="title">{Frontmatters.author.name}</h2>
             </div>
             <div className="aside">
-              <div className="contact email"><i className="fa fa-envelope-o fa-fw" aria-hidden="true"></i> {Frontmatters.author.email}</div>
-              <div className="contact phone-number"><i className="fa fa-phone fa-fw" aria-hidden="true"></i> {Frontmatters.author.phoneNumber}</div>
+              <div className="contact"><i className="fa fa-envelope-o fa-fw" aria-hidden="true"></i> {Frontmatters.author.email}</div>
+              <div className="contact"><i className="fa fa-phone fa-fw" aria-hidden="true"></i> {Frontmatters.author.phoneNumber}</div>
+              <div className="contact"><i className="fa fa-link fa-fw" aria-hidden="true"></i> {Frontmatters.base_url}</div>
             </div>
           </div>
 
