@@ -14,7 +14,7 @@ const Frontmatters = {
     email: "dim0627@gmail.com",
     phoneNumber: "090-5991-6692",
     dob: new Date(1989, 1, 26),
-    roles: ["Web Developer", "Markup Developer", "SEO Analyst", ],
+    roles: ["Web Developer", "SEO Analyst", ],
     languages: ["Japanese", "English(Learning)", ],
     mainSkills: ["Ruby", "Ruby on Rails", "JavaScript(ES2015)", "SEO", ],
     subSkills: ["Golang", "Python", "PHP", "ElasticSearch", "Design", "Writing", ],
