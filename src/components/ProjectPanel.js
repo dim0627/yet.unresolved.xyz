@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import ListContent from '../renderers/list_content';
 import './ProjectPanel.css';
@@ -27,5 +28,13 @@ const ProjectPanel = ({title, stack, descriptionShort, sourceUrl, relatedUrl}) =
     }
   </article>
 );
+
+ProjectPanel.propTypes = {
+  title: PropTypes.string.isRequired,
+  stack: PropTypes.element.isRequired,
+  descriptionShort: PropTypes.string.isRequired,
+  sourceUrl: PropTypes.string,
+  relatedUrl: PropTypes.string,
+};
 
 export default ProjectPanel;

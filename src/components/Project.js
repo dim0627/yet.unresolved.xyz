@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './Project.css';
 
@@ -23,5 +24,12 @@ const Project = ({title, descriptionShort, relatedUrl, sourceUrl}) => (
     }
   </article>
 );
+
+Project.propTypes = {
+  title: PropTypes.string.isRequired,
+  descriptionShort: PropTypes.element.isRequired,
+  relatedUrl: PropTypes.string,
+  sourceUrl: PropTypes.string,
+};
 
 export default Project;

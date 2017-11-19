@@ -17,7 +17,7 @@ const MeStack = () => (
       <ListContent collection={Frontmatters.author.roles} />
     </div>
     <DefinitionList title="D.O.B / Age">
-      {calcAge()}
+      <div>{calcAge()}</div>
     </DefinitionList>
     <DefinitionList title="Language">
       <ListContent collection={Frontmatters.author.languages} />
@@ -29,7 +29,7 @@ const MeStack = () => (
       <ListContent collection={Frontmatters.author.subSkills} />
     </DefinitionList>
     <DefinitionList title="Hiring">
-      {Frontmatters.author.hiring}
+      <div>{Frontmatters.author.hiring}</div>
     </DefinitionList>
   </div>
 );
