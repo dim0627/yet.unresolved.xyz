@@ -3,7 +3,7 @@ import React from 'react';
 import {Helmet} from "react-helmet";
 
 import Frontmatters from '../frontmatters';
-import ProjectPanel from '../components/ProjectPanel';
+import Project from '../components/Project';
 import PageHeader from '../components/PageHeader';
 
 const Projects = () => (
@@ -14,7 +14,7 @@ const Projects = () => (
     </Helmet>
     <PageHeader title="Projects" additionalClass="page" />
     <div className="section-projects">
-      {Frontmatters.projects.map((p, i) => <ProjectPanel key={i} {...p} />)}
+      {Frontmatters.projects.map((p, i) => <Project key={i} {...p} />)}
     </div>
   </div>
 );

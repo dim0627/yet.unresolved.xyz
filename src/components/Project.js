@@ -1,11 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import ListContent from '../renderers/list_content';
 import './Project.css';
 
-const Project = ({title, descriptionShort, relatedUrl, sourceUrl}) => (
-  <article className="project">
-    <h3 className="title">{title}</h3>
+const Project = ({title, stack, descriptionShort, sourceUrl, relatedUrl}) => (
+  <article className="project-panel">
+    <h2 className="title">{title}</h2>
+    <div className="stack">
+      <ListContent collection={stack} />
+    </div>
     <div className="description">{descriptionShort}</div>
     {
       (sourceUrl || relatedUrl) &&
@@ -27,9 +31,10 @@ const Project = ({title, descriptionShort, relatedUrl, sourceUrl}) => (
 
 Project.propTypes = {
   title: PropTypes.string.isRequired,
-  descriptionShort: PropTypes.element.isRequired,
-  relatedUrl: PropTypes.string,
+  stack: PropTypes.element.isRequired,
+  descriptionShort: PropTypes.string.isRequired,
   sourceUrl: PropTypes.string,
+  relatedUrl: PropTypes.string,
 };
 
 export default Project;
