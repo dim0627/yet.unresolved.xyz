@@ -12,8 +12,10 @@ const Projects = () => (
       <title>Projects - Daisuke Tsuji</title>
       <link rel="canonical" href={`${Frontmatters.base_url}/projects`} />
     </Helmet>
+
     <PageHeader title="Projects" additionalClass="page" />
-    <div className="section-projects">
+
+    <div>
       {Frontmatters.projects.map((p, i) => <Project key={i} {...p} />)}
     </div>
   </div>

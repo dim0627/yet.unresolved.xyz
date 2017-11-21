@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import ListContent from '../renderers/list_content';
 import './Project.css';
 
-const Project = ({title, stack, descriptionShort, sourceUrl, relatedUrl}) => (
+const Project = ({title, descriptionShort, stack, sourceUrl, relatedUrl}) => (
   <article className="project-panel">
     <h2 className="title">{title}</h2>
     <div className="stack">
@@ -31,8 +31,8 @@ const Project = ({title, stack, descriptionShort, sourceUrl, relatedUrl}) => (
 
 Project.propTypes = {
   title: PropTypes.string.isRequired,
-  stack: PropTypes.element.isRequired,
-  descriptionShort: PropTypes.string.isRequired,
+  stack: PropTypes.array.isRequired,
+  descriptionShort: PropTypes.element,
   sourceUrl: PropTypes.string,
   relatedUrl: PropTypes.string,
 };

@@ -84,7 +84,6 @@ const Frontmatters = {
     {
       title: "Hugo Theme Solit",
       stack: ["Hugo", "Go html/template", "Responsive Web Design", "AMP"],
-      githubRepositoryName: "dim0627/hugo_theme_solit",
       sourceUrl: "https://github.com/dim0627/hugo_theme_solit",
       relatedUrl: "https://themes.gohugo.io/hugo_theme_solit/",
       index: false,
@@ -98,7 +97,6 @@ const Frontmatters = {
         </div>
       ),
       stack: ["Hugo", "Go html/template", "Responsive Web Design", "AMP"],
-      githubRepositoryName: "dim0627/hugo_theme_robust",
       sourceUrl: "https://github.com/dim0627/hugo_theme_robust",
       relatedUrl: "https://themes.gohugo.io/robust/",
       index: true,
@@ -112,7 +110,6 @@ const Frontmatters = {
         </div>
       ),
       stack: ["Hugo", "Go html/template", "Responsive Web Design", "AMP"],
-      githubRepositoryName: "dim0627/hugo_theme_aglaus",
       sourceUrl: "https://github.com/dim0627/hugo_theme_aglaus",
       relatedUrl: "https://themes.gohugo.io/aglaus/",
       index: false,
@@ -126,13 +123,12 @@ const Frontmatters = {
         </div>
       ),
       stack: ["Hugo", "Go html/template", "Responsive Web Design", "Bootstrap"],
-      githubRepositoryName: "dim0627/hugo_theme_beg",
       sourceUrl: "https://github.com/dim0627/hugo_theme_beg",
       relatedUrl: "https://themes.gohugo.io/beg/",
       index: false,
     },
     {
-      title: "Tech Blog",
+      title: "Unresolved",
       descriptionShort: (
         <div>
           <p>My private blog for technology problem.</p>
@@ -148,6 +144,7 @@ const Frontmatters = {
     {
       title: "Rista, inc.",
       workingFrom: new Date(2016, 10, 1),
+      workingTo: null,
       role: "Web Developer, SEO Analyist",
       stack: ["Ruby", "Ruby on Rails", "ES2015", "MySQL", "ElasticSearch"],
     },

@@ -6,7 +6,7 @@ import Frontmatters from '../frontmatters';
 import Section from '../components/Section';
 import Hero from '../components/Hero';
 import MeStack from '../components/MeStack';
-import WorkStack from '../components/WorkStack';
+import Work from '../components/Work';
 import Project from '../components/Project';
 
 const Home = () => (
@@ -19,7 +19,7 @@ const Home = () => (
 
     <Section sectionId="projects" sectionTitle="Projects">
       <div>
-        <div className="section-projects">
+        <div>
           {Frontmatters.projects.filter((p) => p.index).map((p, i) =>
             <Project key={i} {...p} />
           )}
@@ -31,7 +31,9 @@ const Home = () => (
     </Section>
 
     <Section sectionId="works" sectionTitle="Works">
-      <WorkStack />
+      <div>
+        {Frontmatters.works.map((work, i) => <Work key={i} {...work} />)}
+      </div>
     </Section>
 
   </div>
