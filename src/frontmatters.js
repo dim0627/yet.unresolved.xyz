@@ -128,7 +128,7 @@ const Frontmatters = {
       index: false,
     },
     {
-      title: "Unresolved",
+      title: "42 Design Work",
       descriptionShort: (
         <div>
           <p>My private blog for technology problem.</p>
