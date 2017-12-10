@@ -144,7 +144,7 @@ const Frontmatters = {
     {
       title: "Rista, inc.",
       workingFrom: new Date(2016, 10, 1),
-      workingTo: null,
+      workingTo: new Date(2017, 12, 1),
       role: "Web Developer, SEO Analyist",
       stack: ["Ruby", "Ruby on Rails", "ES2015", "MySQL", "ElasticSearch"],
     },
