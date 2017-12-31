@@ -7,7 +7,7 @@ const Frontmatters = {
   accentColor: "",
   baseColor: "#333",
   motto: (
-    <div>Unresolved today,<br />Resolved in tomorrow.</div>
+    <div>Unresolved today,<br />Solve in tomorrow.</div>
   ),
   author: {
     name: "Daisuke Tsuji",
