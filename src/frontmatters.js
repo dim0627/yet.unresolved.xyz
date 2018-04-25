@@ -60,7 +60,7 @@ const Frontmatters = {
       index: false,
     },
     {
-      title: "NikuPeer",
+      title: "NikuPeer(EOL)",
       descriptionShort: (
         <div>
           <p>Web service for plan and join meat party.</p>
@@ -68,7 +68,6 @@ const Frontmatters = {
         </div>
       ),
       stack: ["Rails 5.1.4", "webpacker", "yarn", "webpack", "PostCSS", "ES2015", "AMP"],
-      relatedUrl: "https://nikupeer.tokyo/",
       index: true,
     },
     {
