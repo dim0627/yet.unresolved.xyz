@@ -17,7 +17,7 @@ const Frontmatters = {
     roles: ["Web Developer", "SEO Analyst", ],
     languages: ["Japanese", "English(Learning)", ],
     mainSkills: ["Ruby", "Ruby on Rails", "JavaScript(ES2015)", "SEO", ],
-    subSkills: ["Golang", "Python", "PHP", "ElasticSearch", "Design", "Writing", ],
+    subSkills: ["Golang", "Python", "PHP", "Elasticsearch", "Design", "Writing", ],
     hiring: (
     <div>
       <p>Welcome :)</p>
@@ -37,7 +37,19 @@ const Frontmatters = {
   },
   projects: [
     {
-      title: "Unresolved(Portfolio)",
+      title: "unresolved",
+      descriptionShort: (
+        <div>
+          <p>Tech blog.</p>
+        </div>
+      ),
+      stack: ["GatsbyJS", "React", "Contentful", "Netlify", "Server Side Rendering", "Responsive Web Design"],
+      sourceUrl: "https://github.com/dim0627/blog.unresolved.xyz",
+      relatedUrl: "https://blog.unresolved.xyz/",
+      index: true,
+    },
+    {
+      title: "Portfolio",
       descriptionShort: (
         <div>
           <p>It is about this page you are looking at.</p>
@@ -71,7 +83,7 @@ const Frontmatters = {
       index: true,
     },
     {
-      title: "Private Web Project",
+      title: "RECR(EOL)",
       descriptionShort: (
         <div>
           <p>Part-time job listing service for not large organizations such as personal store.</p>
@@ -127,7 +139,7 @@ const Frontmatters = {
       index: false,
     },
     {
-      title: "42 Design Work",
+      title: "42 Design Work(EOL)",
       descriptionShort: (
         <div>
           <p>My private blog for technology problem.</p>
@@ -145,14 +157,14 @@ const Frontmatters = {
       workingFrom: new Date(2016, 10, 1),
       workingTo: new Date(2017, 12, 1),
       role: "Web Developer, SEO Analyist",
-      stack: ["Ruby", "Ruby on Rails", "ES2015", "MySQL", "ElasticSearch"],
+      stack: ["Ruby", "Ruby on Rails", "ES2015", "MySQL", "Elasticsearch"],
     },
     {
       title: "Pharma Information Network, inc.",
       workingFrom: new Date(2015, 8, 1),
       workingTo: new Date(2016, 10, 1),
       role: "Lead Developer, SEO Analyist",
-      stack: ["PHP", "Laravel", "Python", "Golang", "Ruby", "Ruby on Rails", "MySQL", "ElasticSearch"],
+      stack: ["PHP", "Laravel", "Python", "Golang", "Ruby", "Ruby on Rails", "MySQL", "Elasticsearch"],
     },
     {
       title: "MedPeer, inc.",
