@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/dim0627/portfolio.svg?style=svg)](https://circleci.com/gh/dim0627/portfolio)
+[![CircleCI](https://circleci.com/gh/dim0627/yet.unresolved.xyz.svg?style=svg)](https://circleci.com/gh/dim0627/yet.unresolved.xyz)
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
