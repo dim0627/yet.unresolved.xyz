@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Frontmatters = {
-  site_name: "Unresolved",
-  base_url: "https://yet.unresolved.xyz",
+  siteName: "Unresolved",
+  baseUrl: "https://yet.unresolved.xyz",
   mainColor: "#fdce12",
   accentColor: "",
   baseColor: "#333",
