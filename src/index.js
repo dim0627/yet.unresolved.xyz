@@ -21,7 +21,7 @@ ReactDOM.render(
     </Helmet>
     <Header />
     <Footer />
-  </div>
+  </div>,
   document.getElementById('root')
 )
 

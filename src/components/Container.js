@@ -8,7 +8,7 @@ const Container = styled.div`
   padding: 0 1.5rem;
 `
 
-export default const ({children}) => (
+export default ({children}) => (
   <Container>
     {children}
   </Container>
