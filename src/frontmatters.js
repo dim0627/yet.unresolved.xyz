@@ -16,7 +16,7 @@ const Frontmatters = {
     dob: new Date(1989, 1, 26),
     roles: ["Web Developer", "SEO Analyst", ],
     languages: ["Japanese", "English(Learning)", ],
-    mainSkills: ["Ruby", "Ruby on Rails", "JavaScript(ES2015)", "SEO", ],
+    mainSkills: ["Ruby", "Ruby on Rails", "ES6", "SEO", ],
     subSkills: ["Golang", "Python", "PHP", "Elasticsearch", "Design", "Writing", ],
     hiring: (
     <div>
@@ -55,7 +55,7 @@ const Frontmatters = {
           <p>It is about this page you are looking at.</p>
         </div>
       ),
-      stack: ["React", "yarn", "webpack", "ES2015"],
+      stack: ["React", "yarn", "webpack", "ES6"],
       sourceUrl: "https://github.com/dim0627/portfolio",
       relatedUrl: "https://yet.unresolved.xyz",
       index: false,
@@ -79,7 +79,7 @@ const Frontmatters = {
           <p>Support Event structured data for Google rich snippet.</p>
         </div>
       ),
-      stack: ["Rails 5.1.4", "webpacker", "yarn", "webpack", "PostCSS", "ES2015", "AMP"],
+      stack: ["Rails 5.1.4", "webpacker", "yarn", "webpack", "PostCSS", "ES6", "AMP"],
       index: true,
     },
     {
@@ -90,7 +90,7 @@ const Frontmatters = {
           <p>Support JobPosting structured data for Google for Jobs.</p>
         </div>
       ),
-      stack: ["Rails 5.1.4", "webpacker", "yarn", "webpack", "PostCSS", "ES2015", "AMP"],
+      stack: ["Rails 5.1.4", "webpacker", "yarn", "webpack", "PostCSS", "ES6", "AMP"],
     },
     {
       title: "Hugo Theme Solit",
@@ -157,7 +157,7 @@ const Frontmatters = {
       workingFrom: new Date(2016, 10, 1),
       workingTo: new Date(2017, 12, 1),
       role: "Web Developer, SEO Analyist",
-      stack: ["Ruby", "Ruby on Rails", "ES2015", "MySQL", "Elasticsearch"],
+      stack: ["Ruby", "Ruby on Rails", "ES6", "MySQL", "Elasticsearch"],
     },
     {
       title: "Pharma Information Network, inc.",

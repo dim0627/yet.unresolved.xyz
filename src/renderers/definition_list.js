@@ -1,20 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
 
-const DefinitionList = ({title, children}) => {
-  return(
-    <dl>
-      <dt>{title}</dt>
-      <dd>
-        {children}
-      </dd>
-    </dl>
-  );
-}
-
-DefinitionList.propTypes = {
-  title: PropTypes.string.isRequired,
-  children: PropTypes.element.isRequired,
-};
-
-export default DefinitionList;
+export default ({title, children}) => (
+  <dl>
+    <dt>{title}</dt>
+    <dd>
+      {children}
+    </dd>
+  </dl>
+)

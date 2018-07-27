@@ -9,8 +9,9 @@ const Footer = styled.footer`
 `
 
 const Copy = styled.div`
+  font-size: 1.2rem;
   font-weight: 700;
-  line-height: 2rem;
+  line-height: 1.5rem;
 
   @media screen and (max-width: 767px) {
     text-align: center;
@@ -19,7 +20,7 @@ const Copy = styled.div`
 
 const Social = styled.div`
   position: absolute;
-  top: .25rem;
+  top: 0;
   right: 1.5rem;
 
   @media screen and (max-width: 767px) {

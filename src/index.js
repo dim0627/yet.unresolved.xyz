@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import {Helmet} from "react-helmet";
-import registerServiceWorker from './registerServiceWorker';
-import Frontmatters from './frontmatters';
-import './styles.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Hero from './components/Hero';
-// import Home from './containers/Home';
-// import Projects from './containers/Projects';
-// import NameCard from './containers/NameCard';
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
+import {Helmet} from "react-helmet"
+import registerServiceWorker from './registerServiceWorker'
+import Frontmatters from './frontmatters'
+import './styles.css'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Hero from './components/Hero'
+import Me from './components/Me'
+import Projects from './components/Projects'
+import Works from './components/Works'
 
 ReactDOM.render(
   <div>
@@ -19,12 +19,15 @@ ReactDOM.render(
     </Helmet>
     <Header />
     <Hero />
+    <Me />
+    <Projects />
+    <Works />
     <Footer />
   </div>,
   document.getElementById('root')
 )
 
-registerServiceWorker();
+registerServiceWorker()
 
 
 // <Route exact path="/" component={Home} />
