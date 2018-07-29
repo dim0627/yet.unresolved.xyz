@@ -1,13 +1,28 @@
-import React from 'react';
-import Frontmatters from '../frontmatters';
-import './Hero.css';
+import React from 'react'
+import styled from "styled-components"
+import Frontmatters from '../frontmatters'
+import Container from './Container'
 
-const Hero = () => (
-  <section className="hero">
-    <div className="l-container">
-      <h1 className="title">{Frontmatters.motto}</h1>
-    </div>
-  </section>
-);
+const Hero = styled.div`
+  padding: 8rem 0;
+  text-align: center;
+`
 
-export default Hero;
+const Title = styled.h1`
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 4rem;
+
+  @media (max-width: 767px) {
+    font-size: 2rem;
+    line-height: 2.75rem;
+  }
+`
+
+export default () => (
+  <Hero>
+    <Container>
+      <Title>{Frontmatters.motto}</Title>
+    </Container>
+  </Hero>
+)
