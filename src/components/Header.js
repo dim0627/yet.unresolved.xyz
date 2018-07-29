@@ -71,9 +71,9 @@ export default () => (
     <Container>
       <Logo href="/">{Frontmatters.siteName}</Logo>
       <Ops>
-        <OpsItem href="#me">Me</OpsItem>
-        <OpsItem href="#projects">Projects</OpsItem>
-        <OpsItem href="#works">Works</OpsItem>
+        <OpsItem href="/#me">Me</OpsItem>
+        <OpsItem href="/#projects">Projects</OpsItem>
+        <OpsItem href="/#works">Works</OpsItem>
       </Ops>
     </Container>
   </Header>
