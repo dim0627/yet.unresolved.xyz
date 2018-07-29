@@ -37,7 +37,7 @@ const Frontmatters = {
   },
   projects: [
     {
-      title: "nutry",
+      title: "nutry.co",
       descriptionShort: (
         <div>
           <p>nutry is trouble consultation service for managed dieticians.</p>
@@ -47,7 +47,7 @@ const Frontmatters = {
       relatedUrl: "https://nutry.co/",
     },
     {
-      title: "unresolved",
+      title: "blog.unresolved.xyz",
       descriptionShort: (
         <div>
           <p>Tech blog.</p>
@@ -58,7 +58,7 @@ const Frontmatters = {
       relatedUrl: "https://blog.unresolved.xyz/",
     },
     {
-      title: "Portfolio",
+      title: "yet.unresolved.xyz",
       descriptionShort: (
         <div>
           <p>It is about this page you are looking at.</p>
