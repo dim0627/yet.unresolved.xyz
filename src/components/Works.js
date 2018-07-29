@@ -1,12 +1,14 @@
 import React from 'react'
 import styled from "styled-components"
-import Container from './Container'
 import PageHeader from './PageHeader';
 import Section from '../components/Section'
 import Frontmatters from '../frontmatters'
 
+const WorkCard = styled.div`
+`
+
 const Work = (props) => (
-  <Section sectionId='works' sectionTitle='Works'>
+  <WorkCard>
     {<div className="date">{props.workingTo ? props.workingTo.toDateString() : "Now"}</div>}
     <div className="details">
       <div className="role">{props.role}</div>
@@ -15,18 +17,19 @@ const Work = (props) => (
         {props.stack.map((k, i) => <li key={i}>{k}</li>)}
       </div>
     </div>
-  <div className="date">{props.workingFrom.toDateString()}</div>
-  </Section>
+    <div className="date">
+      {props.workingFrom.toDateString()}
+    </div>
+  </WorkCard>
 )
 
 const WorksContainer = styled.div`
 `
 
 export default () => (
-  <Container>
-    <PageHeader title='Projects' />
+  <Section sectionId='works' sectionTitle='Works'>
     <WorksContainer>
       {Frontmatters.works.map((k, i) => <Work key={i} {...k} />)}
     </WorksContainer>
-  </Container>
+  </Section>
 )

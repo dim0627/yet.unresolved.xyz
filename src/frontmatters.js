@@ -37,16 +37,25 @@ const Frontmatters = {
   },
   projects: [
     {
+      title: "nutry",
+      descriptionShort: (
+        <div>
+          <p>nutry is trouble consultation service for managed dieticians.</p>
+        </div>
+      ),
+      stack: ["Rails 5.2.0", "webpacker", "cssnext", "ES6"],
+      relatedUrl: "https://nutry.co/",
+    },
+    {
       title: "unresolved",
       descriptionShort: (
         <div>
           <p>Tech blog.</p>
         </div>
       ),
-      stack: ["GatsbyJS", "React", "Contentful", "Netlify", "Server Side Rendering", "Responsive Web Design"],
+      stack: ["GatsbyJS", "Contentful", "Netlify", "Server Side Rendering"],
       sourceUrl: "https://github.com/dim0627/blog.unresolved.xyz",
       relatedUrl: "https://blog.unresolved.xyz/",
-      index: true,
     },
     {
       title: "Portfolio",
@@ -55,10 +64,9 @@ const Frontmatters = {
           <p>It is about this page you are looking at.</p>
         </div>
       ),
-      stack: ["React", "yarn", "webpack", "ES6"],
+      stack: ["React"],
       sourceUrl: "https://github.com/dim0627/portfolio",
       relatedUrl: "https://yet.unresolved.xyz",
-      index: false,
     },
     {
       title: "TIL(Today I Learned)",
@@ -69,7 +77,6 @@ const Frontmatters = {
       ),
       stack: ["GitHub", "Markdown"],
       relatedUrl: "https://github.com/dim0627/til",
-      index: false,
     },
     {
       title: "NikuPeer(EOL)",
@@ -79,8 +86,7 @@ const Frontmatters = {
           <p>Support Event structured data for Google rich snippet.</p>
         </div>
       ),
-      stack: ["Rails 5.1.4", "webpacker", "yarn", "webpack", "PostCSS", "ES6", "AMP"],
-      index: true,
+      stack: ["Rails 5.1.4", "webpacker", "cssnext", "ES6", "AMP"],
     },
     {
       title: "RECR(EOL)",
@@ -90,74 +96,23 @@ const Frontmatters = {
           <p>Support JobPosting structured data for Google for Jobs.</p>
         </div>
       ),
-      stack: ["Rails 5.1.4", "webpacker", "yarn", "webpack", "PostCSS", "ES6", "AMP"],
-    },
-    {
-      title: "Hugo Theme Solit",
-      stack: ["Hugo", "Go html/template", "Responsive Web Design", "AMP"],
-      sourceUrl: "https://github.com/dim0627/hugo_theme_solit",
-      relatedUrl: "https://themes.gohugo.io/hugo_theme_solit/",
-      index: false,
-    },
-    {
-      title: "Hugo Theme Robust",
-      descriptionShort: (
-        <div>
-          <p>Full stack blog theme for Hugo.</p>
-          <p>Supported Google AMP Project, splitted default HTML and AMP HTML.</p>
-        </div>
-      ),
-      stack: ["Hugo", "Go html/template", "Responsive Web Design", "AMP"],
-      sourceUrl: "https://github.com/dim0627/hugo_theme_robust",
-      relatedUrl: "https://themes.gohugo.io/robust/",
-      index: true,
-    },
-    {
-      title: "Hugo Theme Aglaus",
-      descriptionShort: (
-        <div>
-          <p>Single column blog theme for Hugo.</p>
-          <p>Supported Google AMP Project, generate AMP HTML only.</p>
-        </div>
-      ),
-      stack: ["Hugo", "Go html/template", "Responsive Web Design", "AMP"],
-      sourceUrl: "https://github.com/dim0627/hugo_theme_aglaus",
-      relatedUrl: "https://themes.gohugo.io/aglaus/",
-      index: false,
-    },
-    {
-      title: "Hugo Theme Beg",
-      descriptionShort: (
-        <div>
-          <p>Bootstrap based theme for Hugo.</p>
-          <p>Theme skeleton for beginners of Hugo theme createors who want to using Bootstrap.</p>
-        </div>
-      ),
-      stack: ["Hugo", "Go html/template", "Responsive Web Design", "Bootstrap"],
-      sourceUrl: "https://github.com/dim0627/hugo_theme_beg",
-      relatedUrl: "https://themes.gohugo.io/beg/",
-      index: false,
-    },
-    {
-      title: "42 Design Work(EOL)",
-      descriptionShort: (
-        <div>
-          <p>My private blog for technology problem.</p>
-        </div>
-      ),
-      stack: ["Hugo", "Go html/template", "Responsive Web Design", "AMP"],
-      sourceUrl: "https://github.com/dim0627/blog",
-      relatedUrl: "https://42-design.work/",
-      index: true,
+      stack: ["Rails 5.1.4", "webpacker", "cssnext", "ES6", "AMP"],
     },
   ],
   works: [
     {
+      title: "Fitsplus, inc.(Freelance)",
+      workingFrom: new Date(2017, 11, 1),
+      workingTo: new Date(2018, 7, 1),
+      role: "Web Developer, Project Manager",
+      stack: ["Ruby", "Rails 5.2.0", "ES6", "AWS"],
+    },
+    {
       title: "Rista, inc.",
       workingFrom: new Date(2016, 10, 1),
-      workingTo: new Date(2017, 12, 1),
+      workingTo: new Date(2017, 11, 1),
       role: "Web Developer, SEO Analyist",
-      stack: ["Ruby", "Ruby on Rails", "ES6", "MySQL", "Elasticsearch"],
+      stack: ["Ruby", "Rails 5.2.0", "ES6", "MySQL", "Elasticsearch"],
     },
     {
       title: "Pharma Information Network, inc.",
