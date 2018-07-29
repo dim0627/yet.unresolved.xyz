@@ -36,7 +36,7 @@ const Title = styled.h2`
 `
 
 const Stack = styled.ul`
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 
   li {
     display: inline;
