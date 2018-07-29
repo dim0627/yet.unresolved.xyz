@@ -12,7 +12,7 @@ import Projects from './components/Projects'
 import Works from './components/Works'
 
 ReactDOM.render(
-  <div>
+  <React.Fragment>
     <Helmet>
       <title>Portfolio - Daisuke Tsuji</title>
       <link rel="canonical" href={Frontmatters.baseUrl} />
@@ -23,7 +23,7 @@ ReactDOM.render(
     <Projects />
     <Works />
     <Footer />
-  </div>,
+  </React.Fragment>,
   document.getElementById('root')
 )
 

@@ -108,10 +108,12 @@ const ProjectsContainer = styled.div`
 `
 
 export default () => (
-  <Container>
-    <PageHeader title='Projects' />
-    <ProjectsContainer>
-      {Frontmatters.projects.map((k, i) => <Project key={i} {...k} />)}
-    </ProjectsContainer>
-  </Container>
+  <div id='projects' name='projects'>
+    <Container>
+      <PageHeader title='Projects' />
+      <ProjectsContainer>
+        {Frontmatters.projects.map((k, i) => <Project key={i} {...k} />)}
+      </ProjectsContainer>
+    </Container>
+  </div>
 )
