@@ -1,5 +1,5 @@
 import React from 'react'
-import { Github, Link } from 'react-feather';
+import { GitHub, Link } from 'react-feather';
 import styled from "styled-components"
 import Container from './Container'
 import PageHeader from './PageHeader';
@@ -87,7 +87,7 @@ const Project = (props) => (
           <Aside>
             {props.sourceUrl &&
                 <AsideItem href={props.sourceUrl} target="_blank" rel="nofollow">
-                  <Github />GitHub
+                  <GitHub />GitHub
                 </AsideItem>
             }
             {props.relatedUrl &&

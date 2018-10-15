@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Facebook, Twitter, Linkedin, Mail } from 'react-feather';
+import { GitHub, Facebook, Twitter, Linkedin, Mail } from 'react-feather';
 import styled from "styled-components"
 import Container from './Container'
 import Frontmatters from '../frontmatters';
@@ -47,7 +47,7 @@ export default () => (
   <Footer>
     <Container>
       <Social>
-        <SocialItem href={Frontmatters.author.social.github} target="_blank" rel="nofollow"><Github /></SocialItem>
+        <SocialItem href={Frontmatters.author.social.github} target="_blank" rel="nofollow"><GitHub /></SocialItem>
         <SocialItem href={Frontmatters.author.social.twitter} target="_blank" rel="nofollow"><Twitter /></SocialItem>
         <SocialItem href={Frontmatters.author.social.facebook} target="_blank" rel="nofollow"><Facebook /></SocialItem>
         <SocialItem href={Frontmatters.author.social.linkedin} target="_blank" rel="nofollow"><Linkedin /></SocialItem>
