@@ -101,9 +101,26 @@ const Frontmatters = {
   ],
   works: [
     {
+      title: "Lang-8 inc.(Freelance)",
+      workingFrom: new Date(2018, 10, 1),
+      role: "Web Developer",
+      stack: ["Ruby", "Rails 4.2.0", "Elasticsearch", "i18n"],
+    },
+    {
+      title: "DMM.com LLC(Freelance)",
+      workingFrom: new Date(2018, 9, 1),
+      role: "Web Developer",
+      stack: ["Ruby", "Rails 5.2.1", "Elasticsearch", "ES6"],
+    },
+    {
+      title: "Pharma Information Network, inc.(Freelance)",
+      workingFrom: new Date(2018, 8, 1),
+      role: "Chief Developer",
+      stack: ["Ruby", "Rails 5.2.1", "ES6"],
+    },
+    {
       title: "Fitsplus, inc.(Freelance)",
       workingFrom: new Date(2017, 11, 1),
-      workingTo: new Date(2018, 7, 1),
       role: "Web Developer, Project Manager",
       stack: ["Ruby", "Rails 5.2.0", "ES6", "AWS"],
     },
@@ -119,7 +136,7 @@ const Frontmatters = {
       workingFrom: new Date(2015, 8, 1),
       workingTo: new Date(2016, 10, 1),
       role: "Lead Developer, SEO Analyist",
-      stack: ["PHP", "Laravel", "Python", "Golang", "Ruby", "Ruby on Rails", "MySQL", "Elasticsearch"],
+      stack: ["PHP", "Laravel", "Python", "Golang", "Ruby", "Ruby on Rails", "Elasticsearch"],
     },
     {
       title: "MedPeer, inc.",
