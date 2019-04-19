@@ -101,7 +101,7 @@ const Frontmatters = {
   ],
   works: [
     {
-      title: "Lang-8 inc.(Freelance)",
+      title: "Lang-8 inc.",
       workingFrom: new Date(2018, 10, 1),
       role: "Web Developer",
       stack: ["Ruby", "Rails 4.2.0", "Elasticsearch", "i18n"],
