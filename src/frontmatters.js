@@ -109,6 +109,7 @@ const Frontmatters = {
     {
       title: "DMM.com LLC(Freelance)",
       workingFrom: new Date(2018, 9, 1),
+      workingTo: new Date(2018, 12, 31),
       role: "Web Developer",
       stack: ["Ruby", "Rails 5.2.1", "Elasticsearch", "ES6"],
     },
