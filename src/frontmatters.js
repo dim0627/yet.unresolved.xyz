@@ -43,7 +43,7 @@ const Frontmatters = {
           <p>nutry is trouble consultation service for managed dieticians.</p>
         </div>
       ),
-      stack: ["Rails 5.2.0", "webpacker", "cssnext", "ES6"],
+      stack: ["Rails 5.x.x", "webpacker", "cssnext", "ES6"],
       relatedUrl: "https://nutry.co/",
     },
     {
@@ -86,7 +86,7 @@ const Frontmatters = {
           <p>Support Event structured data for Google rich snippet.</p>
         </div>
       ),
-      stack: ["Rails 5.1.4", "webpacker", "cssnext", "ES6", "AMP"],
+      stack: ["Rails 5.x.x", "webpacker", "cssnext", "ES6", "AMP"],
     },
     {
       title: "RECR(EOL)",
@@ -96,7 +96,7 @@ const Frontmatters = {
           <p>Support JobPosting structured data for Google for Jobs.</p>
         </div>
       ),
-      stack: ["Rails 5.1.4", "webpacker", "cssnext", "ES6", "AMP"],
+      stack: ["Rails 5.x.x", "webpacker", "cssnext", "ES6", "AMP"],
     },
   ],
   works: [
@@ -104,40 +104,40 @@ const Frontmatters = {
       title: "Lang-8 inc.",
       workingFrom: new Date(2018, 10, 1),
       role: "Web Developer",
-      stack: ["Ruby", "Rails 4.2.0", "Elasticsearch", "i18n"],
+      stack: ["Ruby", "Rails 4.x.x", "Elasticsearch", "i18n"],
     },
     {
       title: "DMM.com LLC(Freelance)",
       workingFrom: new Date(2018, 9, 1),
       workingTo: new Date(2018, 12, 31),
       role: "Web Developer",
-      stack: ["Ruby", "Rails 5.2.1", "Elasticsearch", "ES6"],
+      stack: ["Ruby", "Rails 5.x.x", "Elasticsearch", "ES6"],
     },
     {
       title: "Pharma Information Network, inc.(Freelance)",
       workingFrom: new Date(2018, 8, 1),
       role: "Chief Developer",
-      stack: ["Ruby", "Rails 5.2.1", "ES6"],
+      stack: ["Ruby", "Rails 5.x.x", "ES6"],
     },
     {
       title: "Fitsplus, inc.(Freelance)",
       workingFrom: new Date(2017, 11, 1),
       role: "Web Developer, Project Manager",
-      stack: ["Ruby", "Rails 5.2.0", "ES6", "AWS"],
+      stack: ["Ruby", "Rails 5.x.x", "ES6", "AWS"],
     },
     {
       title: "Rista, inc.",
       workingFrom: new Date(2016, 10, 1),
       workingTo: new Date(2017, 11, 1),
       role: "Web Developer, SEO Analyist",
-      stack: ["Ruby", "Rails 5.2.0", "ES6", "MySQL", "Elasticsearch"],
+      stack: ["Ruby", "Rails 5.x.x", "ES6", "MySQL", "Elasticsearch"],
     },
     {
       title: "Pharma Information Network, inc.",
       workingFrom: new Date(2015, 8, 1),
       workingTo: new Date(2016, 10, 1),
       role: "Lead Developer, SEO Analyist",
-      stack: ["PHP", "Laravel", "Python", "Golang", "Ruby", "Ruby on Rails", "Elasticsearch"],
+      stack: ["PHP", "Laravel", "Python", "Golang", "Ruby", "Rails 4.x.x", "Elasticsearch"],
     },
     {
       title: "MedPeer, inc.",
