@@ -22,7 +22,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "eslint-plugin-jsx-a11y": "^6.2.2"
+    "eslint-plugin-jsx-a11y": "^6.2.3"
   },
   "browserslist": [
     ">0.2%",
