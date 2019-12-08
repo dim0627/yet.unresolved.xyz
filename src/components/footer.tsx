@@ -43,15 +43,29 @@ const SocialItem = styled.a`
   }
 `
 
+const contact: {
+  [key: string]: string
+} = {
+  github: "https://github.com/dim0627",
+  github_id: "dim0627",
+  twitter: "https://twitter.com/dim0627",
+  twitter_id: "dim0627",
+  linkedin: "https://www.linkedin.com/in/daisuke-tsuji-2a379a118",
+  linkedin_id: "daisuke-tsuji-2a379a118",
+  facebook: "https://www.facebook.com/daisuke.tsuji.735",
+  facebook_id: "daisuke.tsuji.735",
+  email: 'dim0627@gmail.com',
+}
+
 export default () => (
   <Footer>
     <Container>
       <Social>
-        <SocialItem href={Frontmatters.author.social.github} target="_blank" rel="nofollow"><GitHub /></SocialItem>
-        <SocialItem href={Frontmatters.author.social.twitter} target="_blank" rel="nofollow"><Twitter /></SocialItem>
-        <SocialItem href={Frontmatters.author.social.facebook} target="_blank" rel="nofollow"><Facebook /></SocialItem>
-        <SocialItem href={Frontmatters.author.social.linkedin} target="_blank" rel="nofollow"><Linkedin /></SocialItem>
-        <SocialItem href={`mailto:${Frontmatters.author.email}`}><Mail /></SocialItem>
+        <SocialItem href={contact.github} target="_blank" rel="nofollow"><GitHub /></SocialItem>
+        <SocialItem href={contact.twitter} target="_blank" rel="nofollow"><Twitter /></SocialItem>
+        <SocialItem href={contact.facebook} target="_blank" rel="nofollow"><Facebook /></SocialItem>
+        <SocialItem href={contact.linkedin} target="_blank" rel="nofollow"><Linkedin /></SocialItem>
+        <SocialItem href={`mailto:${contact.email}`}><Mail /></SocialItem>
       </Social>
       <Copy>&copy; {Frontmatters.siteName}</Copy>
     </Container>

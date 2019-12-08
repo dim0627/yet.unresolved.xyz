@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from "styled-components"
-import Frontmatters from '../frontmatters'
 import Section from '../components/section'
 
 const Title = styled.h3`
@@ -34,7 +33,7 @@ const List = styled.ul`
     display: inline;
     line-height: 1.5rem;
 
-    &:after {
+    &::after {
       content: ', ';
     }
 
@@ -51,24 +50,10 @@ const Paragraph = styled.div`
   }
 `
 
-const social: {
-  [key: string]: string
-} = {
-  github: "https://github.com/dim0627",
-  github_id: "dim0627",
-  twitter: "https://twitter.com/dim0627",
-  twitter_id: "dim0627",
-  linkedin: "https://www.linkedin.com/in/daisuke-tsuji-2a379a118",
-  linkedin_id: "daisuke-tsuji-2a379a118",
-  facebook: "https://www.facebook.com/daisuke.tsuji.735",
-  facebook_id: "daisuke.tsuji.735",
-}
-
 const author: {
   [key: string]: any
 } = {
   name: "Daisuke Tsuji",
-  email: "dim0627@gmail.com",
   phoneNumber: "090-5991-6692",
   dob: new Date(1989, 1, 26),
   roles: ["Web Developer", "SEO Analyst", ],
@@ -78,10 +63,9 @@ const author: {
   hiring: (
   <div>
     <p>Welcome :)</p>
-    <p>I'm looking for developer positions in startups in English speaking countries.</p>
+    <p>I&apos;m looking for developer positions in startups in English speaking countries.</p>
   </div>
-  ),
-  social: social
+  )
 }
 
 interface IMeProps { }

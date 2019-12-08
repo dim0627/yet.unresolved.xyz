@@ -1,6 +1,6 @@
 import React from 'react'
 import NextHead from 'next/head'
-import Styles from './styles'
+import '../styles.css'
 
 const defaultDescription = ''
 const defaultOGURL = ''
@@ -9,7 +9,7 @@ const defaultOGImage = ''
 const Head = props => (
   <NextHead>
     <meta charSet="UTF-8" />
-    <title>{props.title || ''}</title>
+    <title>Portfolio - Daisuke Tsuji</title>
     <meta
       name="description"
       content={props.description || defaultDescription}
@@ -32,7 +32,6 @@ const Head = props => (
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400|700" rel="stylesheet" />
-    <Styles />
   </NextHead>
 )
 

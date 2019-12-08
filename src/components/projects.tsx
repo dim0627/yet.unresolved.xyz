@@ -3,7 +3,6 @@ import { GitHub, Link } from 'react-feather';
 import styled from "styled-components"
 import Container from './container'
 import PageHeader from './page_header';
-import Frontmatters from '../frontmatters'
 
 const ProjectCard = styled.div`
   box-sizing: border-box;
@@ -74,6 +73,71 @@ const AsideItem = styled.a`
   }
 `
 
+const projects = [
+  {
+    title: "nutry.co",
+    descriptionShort: (
+      <div>
+        <p>nutry is trouble consultation service for managed dieticians.</p>
+      </div>
+    ),
+    stack: ["Rails 5.x.x", "webpacker", "cssnext", "ES6"],
+    relatedUrl: "https://nutry.co/",
+  },
+  {
+    title: "blog.unresolved.xyz",
+    descriptionShort: (
+      <div>
+        <p>Tech blog.</p>
+      </div>
+    ),
+    stack: ["GatsbyJS", "Contentful", "Netlify", "Server Side Rendering"],
+    sourceUrl: "https://github.com/dim0627/blog.unresolved.xyz",
+    relatedUrl: "https://blog.unresolved.xyz/",
+  },
+  {
+    title: "yet.unresolved.xyz",
+    descriptionShort: (
+      <div>
+        <p>It is about this page you are looking at.</p>
+      </div>
+    ),
+    stack: ["React"],
+    sourceUrl: "https://github.com/dim0627/portfolio",
+    relatedUrl: "https://yet.unresolved.xyz",
+  },
+  {
+    title: "TIL(Today I Learned)",
+    descriptionShort: (
+      <div>
+        <p>Memo repositoriy a.k.a. TIL.</p>
+      </div>
+    ),
+    stack: ["GitHub", "Markdown"],
+    relatedUrl: "https://github.com/dim0627/til",
+  },
+  {
+    title: "NikuPeer(EOL)",
+    descriptionShort: (
+      <div>
+        <p>Web service for plan and join meat party.</p>
+        <p>Support Event structured data for Google rich snippet.</p>
+      </div>
+    ),
+    stack: ["Rails 5.x.x", "webpacker", "cssnext", "ES6", "AMP"],
+  },
+  {
+    title: "RECR(EOL)",
+    descriptionShort: (
+      <div>
+        <p>Part-time job listing service for not large organizations such as personal store.</p>
+        <p>Support JobPosting structured data for Google for Jobs.</p>
+      </div>
+    ),
+    stack: ["Rails 5.x.x", "webpacker", "cssnext", "ES6", "AMP"],
+  },
+]
+
 const Project = (props) => (
   <ProjectCard>
     <Inner>
@@ -112,7 +176,7 @@ export default () => (
     <Container>
       <PageHeader title='Projects' />
       <ProjectsContainer>
-        {Frontmatters.projects.map((k, i) => <Project key={i} {...k} />)}
+        {projects.map((k, i) => <Project key={i} {...k} />)}
       </ProjectsContainer>
     </Container>
   </div>

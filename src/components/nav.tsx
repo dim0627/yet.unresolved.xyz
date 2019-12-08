@@ -51,7 +51,7 @@ const OpsItem = styled.a`
     height: 3px;
     transition-duration: .3s;
     background-color: #333;
-    }
+  }
 
   &:hover {
     &::after {
