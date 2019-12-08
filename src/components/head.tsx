@@ -1,5 +1,6 @@
 import React from 'react'
 import NextHead from 'next/head'
+import Styles from './styles'
 
 const defaultDescription = ''
 const defaultOGURL = ''
@@ -30,6 +31,8 @@ const Head = props => (
     <meta property="og:image" content={props.ogImage || defaultOGImage} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400|700" rel="stylesheet" />
+    <Styles />
   </NextHead>
 )
 

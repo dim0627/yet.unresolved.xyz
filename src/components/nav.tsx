@@ -1,56 +1,86 @@
 import React from 'react'
-import Link from 'next/link'
+import styled from "styled-components"
+import Container from './Container'
+import Frontmatters from '../frontmatters'
 
+const Header = styled.header`
+  padding: 4rem 0;
+`
+
+const Logo = styled.a`
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 3rem;
+`
+
+const Ops = styled.div`
+  position: absolute;
+  top: 0;
+  right: 1.5rem;
+
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  @media (max-width: 767px) {
+    position: static;
+    margin-top: 2rem;
+  }
+`
+
+const OpsItem = styled.a`
+  display: block;
+  position: relative;
+  margin-left: 1.5rem;
+  padding: 0 1rem;
+  float: left;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 3rem;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 20%;
+    height: 3px;
+    transition-duration: .3s;
+    background-color: #333;
+    }
+
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    max-width: 6rem;
+    margin: 0 0 0 auto;
+    float: none;
+  }
+`
 const links = [
-  { href: 'https://github.com/segmentio/create-next-app', label: 'Github' }
+  { href: '/#me', label: 'Me' },
+  { href: '/#projects', label: 'Projects' },
+  { href: '/#works', label: 'Works' }
 ]
 
-const Nav = () => (
-  <nav>
-    <ul>
-      <li>
-        <Link prefetch href="/">
-          <a>Home</a>
-        </Link>
-      </li>
-      <ul>
+export default () => (
+  <Header>
+    <Container>
+      <Logo href="/">{Frontmatters.siteName}</Logo>
+      <Ops>
         {links.map(({ href, label }) => (
-          <li key={href}>
-            <Link href={href}>
-              <a>{label}</a>
-            </Link>
-          </li>
+          <OpsItem href="{href}">{label}</OpsItem>
         ))}
-      </ul>
-    </ul>
-
-    <style jsx>{`
-      :global(body) {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-          Helvetica, sans-serif;
-      }
-      nav {
-        text-align: center;
-      }
-      ul {
-        display: flex;
-        justify-content: space-between;
-      }
-      nav > ul {
-        padding: 4px 16px;
-      }
-      li {
-        display: flex;
-        padding: 6px 8px;
-      }
-      a {
-        color: #067df7;
-        text-decoration: none;
-        font-size: 13px;
-      }
-    `}</style>
-  </nav>
+      </Ops>
+    </Container>
+  </Header>
 )
 
-export default Nav
