@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
-import Frontmatters from '../frontmatters'
-import Section from '../components/Section'
+import Section from '../components/section'
 
 const Title = styled.h3`
   margin-bottom: 1rem;
@@ -18,7 +17,9 @@ const DefinitionList = styled.dl`
   margin: 1.5rem 0;
 
   dt {
+    font-size: 1.2rem;
     font-weight: 700;
+    line-height: 1.5rem;
   }
 
   dd {
@@ -32,7 +33,7 @@ const List = styled.ul`
     display: inline;
     line-height: 1.5rem;
 
-    &:after {
+    &::after {
       content: ', ';
     }
 
@@ -49,23 +50,46 @@ const Paragraph = styled.div`
   }
 `
 
-export default class extends React.Component {
-  constructor(props) {
+const author: {
+  [key: string]: any
+} = {
+  name: "Daisuke Tsuji",
+  phoneNumber: "090-5991-6692",
+  dob: new Date(1989, 1, 26),
+  roles: ["Web Developer", "SEO Analyst", ],
+  languages: ["Japanese", "English(Learning)", ],
+  mainSkills: ["Ruby", "Ruby on Rails", "ES6", "SEO", ],
+  subSkills: ["Golang", "Python", "PHP", "Elasticsearch", "Design", "Writing", ],
+  hiring: (
+  <div>
+    <p>Welcome :)</p>
+    <p>I&apos;m looking for developer positions in startups in English speaking countries.</p>
+  </div>
+  )
+}
+
+interface IMeProps { }
+interface IMeState {
+  age?: string;
+}
+
+export default class extends React.Component<IMeProps, IMeState> {
+  constructor(props: IMeProps) {
     super(props)
 
-    const ageDate = new Date(Date.now() - Frontmatters.author.dob)
+    const ageDate: Date = new Date(Date.now() - author.dob)
     this.state = {
-      age: `${Frontmatters.author.dob.toDateString()} / Age ${Math.abs(ageDate.getUTCFullYear() - 1970)}`
+      age: `${author.dob.toDateString()} / Age ${Math.abs(ageDate.getUTCFullYear() - 1970)}`
     }
   }
 
   render() {
     return (
       <Section sectionId='me' sectionTitle='Me'>
-        <Title>{Frontmatters.author.name}</Title>
+        <Title>{author.name}</Title>
         <Role>
           <List>
-            {Frontmatters.author.roles.map((k, i) => <li key={i}>{k}</li>)}
+            {author.roles.map((k, i) => <li key={i}>{k}</li>)}
           </List>
         </Role>
         <DefinitionList>
@@ -76,7 +100,7 @@ export default class extends React.Component {
           <dt>Language</dt>
           <dd>
             <List>
-              {Frontmatters.author.languages.map((k, i) => <li key={i}>{k}</li>)}
+              {author.languages.map((k, i) => <li key={i}>{k}</li>)}
             </List>
           </dd>
         </DefinitionList>
@@ -84,7 +108,7 @@ export default class extends React.Component {
           <dt>MainSkills</dt>
           <dd>
             <List>
-              {Frontmatters.author.mainSkills.map((k, i) => <li key={i}>{k}</li>)}
+              {author.mainSkills.map((k, i) => <li key={i}>{k}</li>)}
             </List>
           </dd>
         </DefinitionList>
@@ -92,7 +116,7 @@ export default class extends React.Component {
           <dt>SubSkills</dt>
           <dd>
             <List>
-              {Frontmatters.author.subSkills.map((k, i) => <li key={i}>{k}</li>)}
+              {author.subSkills.map((k, i) => <li key={i}>{k}</li>)}
             </List>
           </dd>
         </DefinitionList>
@@ -100,7 +124,7 @@ export default class extends React.Component {
           <dt>Hiring</dt>
           <dd>
             <Paragraph>
-              {Frontmatters.author.hiring}
+              {author.hiring}
             </Paragraph>
           </dd>
         </DefinitionList>

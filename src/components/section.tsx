@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components"
-import Container from './Container'
-import PageHeader from './PageHeader';
+import Container from './container'
+import PageHeader from './page_header';
 
 const Section = styled.section`
   padding: 8rem 0;

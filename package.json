@@ -1,33 +1,35 @@
 {
-  "name": "yet.unresolved.xyz",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "eslint-config-react-app": "^4.0.1",
-    "eslint-plugin-flowtype": "^4.2.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-react": "^7.14.3",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-feather": "^2.0.3",
-    "react-helmet": "^5.2.1",
-    "react-scripts": "3.0.1",
-    "styled-components": "^4.3.2"
-  },
+  "name": "create-next-example-app",
   "scripts": {
-    "dev": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "lint": "yarn eslint './**/*/*.js'",
-    "eject": "react-scripts eject"
+    "dev": "next",
+    "build": "next build",
+    "export": "next export",
+    "deploy": "yarn build && yarn export"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "next": "^9.1.4",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-feather": "^2.0.3",
+    "styled-components": "^4.4.1"
   },
   "devDependencies": {
-    "eslint-plugin-jsx-a11y": "^6.2.3"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+    "@types/node": "^12.12.14",
+    "@types/react": "^16.9.13",
+    "@typescript-eslint/eslint-plugin": "^2.10.0",
+    "@typescript-eslint/parser": "^2.10.0",
+    "eslint": "^6.7.2",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "stylelint": "^12.0.0",
+    "stylelint-config-property-sort-order-smacss": "^5.2.0",
+    "stylelint-config-standard": "^19.0.0",
+    "stylelint-processor-styled-components": "^1.9.0",
+    "typescript": "^3.7.2"
+  }
 }

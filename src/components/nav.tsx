@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
-import Container from './Container'
+import Container from './container'
 import Frontmatters from '../frontmatters'
 
 const Header = styled.header`
@@ -51,7 +51,7 @@ const OpsItem = styled.a`
     height: 3px;
     transition-duration: .3s;
     background-color: #333;
-    }
+  }
 
   &:hover {
     &::after {
@@ -65,16 +65,22 @@ const OpsItem = styled.a`
     float: none;
   }
 `
+const links = [
+  { href: '/#me', label: 'Me' },
+  { href: '/#projects', label: 'Projects' },
+  { href: '/#works', label: 'Works' }
+]
 
 export default () => (
   <Header>
     <Container>
       <Logo href="/">{Frontmatters.siteName}</Logo>
       <Ops>
-        <OpsItem href="/#me">Me</OpsItem>
-        <OpsItem href="/#projects">Projects</OpsItem>
-        <OpsItem href="/#works">Works</OpsItem>
+        {links.map(({ href, label }) => (
+          <OpsItem key={label} href={href}>{label}</OpsItem>
+        ))}
       </Ops>
     </Container>
   </Header>
 )
+

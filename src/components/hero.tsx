@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
-import Frontmatters from '../frontmatters'
-import Container from './Container'
+import Container from './container'
 
 const Hero = styled.div`
   padding: 8rem 0;
@@ -22,7 +21,9 @@ const Title = styled.h1`
 export default () => (
   <Hero>
     <Container>
-      <Title>{Frontmatters.motto}</Title>
+      <Title>
+        Unresolved today,<br />Solve in tomorrow.
+      </Title>
     </Container>
   </Hero>
 )
