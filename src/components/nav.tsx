@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
-import Container from './Container'
+import Container from './container'
 import Frontmatters from '../frontmatters'
 
 const Header = styled.header`
@@ -77,7 +77,7 @@ export default () => (
       <Logo href="/">{Frontmatters.siteName}</Logo>
       <Ops>
         {links.map(({ href, label }) => (
-          <OpsItem href="{href}">{label}</OpsItem>
+          <OpsItem key={label} href={href}>{label}</OpsItem>
         ))}
       </Ops>
     </Container>
