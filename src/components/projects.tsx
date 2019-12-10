@@ -28,7 +28,7 @@ const Inner = styled.div`
 `
 
 const Title = styled.h2`
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 2rem;
