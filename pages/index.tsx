@@ -5,7 +5,7 @@ import { graphcms } from 'lib/graphcms';
 
 export default function Home({ profile }) {
   return (
-    <Profile />
+    <Profile profile={profile} />
   );
 }
 
@@ -26,7 +26,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      profile: [],
+      profile: profiles[0],
     },
   };
 }

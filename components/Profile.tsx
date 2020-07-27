@@ -1,11 +1,28 @@
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
+import { Container } from './Container';
 import styles from './Profile.module.scss';
 
-export const Profile = () => (
-  <div className={styles.container}>
-    <div className={styles.heading}>
-      <h1 className={styles.name}>Daisuke Tsuji</h1>
-      <div className={styles.description}></div>
+interface IProfile {
+  fullName: string
+  description: string
+  details: string
+}
+
+interface IProp {
+  profile: IProfile
+}
+
+export const Profile = ({ profile }: IProp) => (
+  <Container>
+    <div className={styles.container}>
+      <div className={styles.heading}>
+        <h1 className={styles.name}>{profile.fullName}</h1>
+        <div className={styles.description}>{profile.description}</div>
+        <div className={styles.details}>
+          <ReactMarkdown source={profile.details} escapeHtml={false} />
+        </div>
+      </div>
     </div>
-  </div>
+  </Container>
 );
