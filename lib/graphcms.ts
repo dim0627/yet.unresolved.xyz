@@ -6,5 +6,5 @@ export const graphcms = new GraphQLClient(
     headers: {
       authorization: `Bearer ${process.env.GRAPHCMS_BEARER_TOKEN}`,
     },
-  }
+  },
 );

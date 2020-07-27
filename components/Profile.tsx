@@ -3,14 +3,8 @@ import ReactMarkdown from 'react-markdown';
 import { Container } from './Container';
 import styles from './Profile.module.scss';
 
-interface IProfile {
-  fullName: string
-  description: string
-  details: string
-}
-
 interface IProp {
-  profile: IProfile
+  profile: Profile
 }
 
 export const Profile = ({ profile }: IProp) => (

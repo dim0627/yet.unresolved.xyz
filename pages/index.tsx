@@ -1,22 +1,33 @@
 import React from 'react';
 // import Head from 'next/head';
 import { Profile } from 'components/Profile';
+import { Projects } from 'components/Projects';
 import { graphcms } from 'lib/graphcms';
 
-export default function Home({ profile }) {
+export default function Home({ profile, projects }) {
   return (
-    <Profile profile={profile} />
+    <>
+      <Profile profile={profile} />
+      <Projects projects={projects} />
+    </>
   );
 }
 
 export async function getStaticProps() {
-  const { profiles } = await graphcms.request(
+  const { profiles, projects } = await graphcms.request(
     `
       {
         profiles {
           fullName
           description
           details
+        }
+        projects{
+          title
+          stacks
+          description
+          href
+          repositoryUrl
         }
       }
     `,
@@ -26,6 +37,7 @@ export async function getStaticProps() {
 
   return {
     props: {
+      projects,
       profile: profiles[0],
     },
   };

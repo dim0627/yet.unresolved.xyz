@@ -12,7 +12,9 @@
   "dependencies": {
     "next": "9.5.0",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-feather": "^2.0.8",
+    "react-markdown": "^4.3.1"
   },
   "devDependencies": {
     "@types/node": "^14.0.26",
@@ -27,7 +29,6 @@
     "eslint-plugin-react": "^7.20.4",
     "eslint-plugin-react-hooks": "^4.0.8",
     "graphql-request": "^2.0.0",
-    "react-markdown": "^4.3.1",
     "sass": "^1.26.10",
     "stylelint": "^13.6.1",
     "stylelint-config-css-modules": "^2.2.0",

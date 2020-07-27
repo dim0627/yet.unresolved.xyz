@@ -1,0 +1,11 @@
+.container {
+  display: grid;
+  align-content: center;
+  min-height: 100vh;
+  margin: 0 -1.5rem;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+}
