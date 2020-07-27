@@ -1,8 +1,9 @@
-import Head from 'next/head'
-import { Profile } from 'components/Profile'
+import React from 'react';
+// import Head from 'next/head';
+import { Profile } from 'components/Profile';
 
 export default function Home() {
   return (
     <Profile />
-  )
+  );
 }
