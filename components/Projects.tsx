@@ -4,17 +4,17 @@ import { SectionHeader } from 'components/SectionHeader';
 import { Project } from 'components/Project';
 import styles from './Projects.module.scss';
 
-interface IProjectsProp {
+interface IProp {
   projects: Project[]
 }
 
-export const Projects = ({ projects }: IProjectsProp) => (
+export const Projects = ({ projects }: IProp) => (
   <>
     <SectionHeader title="Projects" />
     <Container>
       <div className={styles.container}>
         <div className={styles.stack}>
-          {projects.map((project) => <Project key={project.title} project={project} />)}
+          {projects.map((project) => <Project key={project.id} project={project} />)}
         </div>
       </div>
     </Container>

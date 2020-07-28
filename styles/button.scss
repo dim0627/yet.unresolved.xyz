@@ -1,0 +1,14 @@
+.roundedIconButton {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--radius-base);
+  background-color: rgba(0, 0, 0, .03);
+
+  &:hover {
+    transition-duration: .2s;
+    background-color: rgba(0, 0, 0, .08);
+  }
+}

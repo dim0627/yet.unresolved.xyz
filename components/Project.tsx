@@ -3,11 +3,11 @@ import { GitHub, Link } from 'react-feather';
 import ReactMarkdown from 'react-markdown';
 import styles from './Project.module.scss';
 
-interface IProjectProp {
+interface IProps {
   project: Project
 }
 
-export const Project = ({ project }: IProjectProp) => (
+export const Project = ({ project }: IProps) => (
   <div className={styles.container}>
     <div className={styles.inner}>
       <h3 className={styles.name}>{project.title}</h3>
@@ -30,7 +30,7 @@ export const Project = ({ project }: IProjectProp) => (
           )}
           {project.repositoryUrl && (
           <li className={styles.refsItem}>
-            <a href={project.repositoryUrl} rel="nofollow" target="_blank" aria-label="repository url" className={styles.refsAnchor}>
+            <a href={project.repositoryUrl} rel="nofollow noreferrer" target="_blank" aria-label="repository url" className={styles.refsAnchor}>
               <GitHub size={20} />
             </a>
           </li>

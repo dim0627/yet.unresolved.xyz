@@ -1,4 +1,5 @@
 interface Project {
+  id: string
   title: string
   description: string
   stacks: string[]
@@ -7,7 +8,22 @@ interface Project {
 }
 
 interface Profile {
+  id: string
+  title: string
   fullName: string
   description: string
   details: string
+  twitterUrl: string
+  gitHubUrl: string
+  linkedInUrl: string
+  emailAddress: string
+}
+
+interface Career {
+  id: string
+  companyName: string
+  roles: string[]
+  stacks: string[]
+  joinedAt: Date
+  leavedAt?: Date
 }

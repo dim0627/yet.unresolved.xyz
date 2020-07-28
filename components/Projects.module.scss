@@ -1,8 +1,9 @@
 .container {
-  display: grid;
-  align-content: center;
-  min-height: 100vh;
-  margin: 0 -1.5rem;
+  margin: 3rem -1.5rem;
+
+  @media screen and (max-width: 767px) {
+    margin: 0;
+  }
 }
 
 .stack {
