@@ -1,11 +1,10 @@
 import React from 'react';
-// import Head from 'next/head';
+import Head from 'next/head';
 import { Profile } from 'components/Profile';
 import { Projects } from 'components/Projects';
 import { Careers } from 'components/Careers';
 import { Footer } from 'components/Footer';
 import { graphcms } from 'lib/graphcms';
-import Head from 'next/head';
 
 export default function Home({ profile, projects, careers }) {
   return (
