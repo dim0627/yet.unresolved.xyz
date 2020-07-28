@@ -1,9 +1,0 @@
-processors:
-  - stylelint-processor-styled-components
-extends:
-  - stylelint-config-standard
-  - stylelint-config-property-sort-order-smacss
-rules:
-  number-leading-zero: never
-  no-empty-source: null
-  block-no-empty: null

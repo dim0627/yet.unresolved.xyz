@@ -1,30 +1,46 @@
 module.exports = {
   env: {
     browser: true,
-    es6: true
+    es2020: true,
   },
   extends: [
-    'eslint:recommended',
     'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'airbnb',
   ],
-  globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly'
-  },
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
-    ecmaVersion: 2018,
-    sourceType: 'module'
+    ecmaVersion: 11,
+    sourceType: 'module',
   },
   plugins: [
     'react',
-    '@typescript-eslint'
+    '@typescript-eslint',
   ],
   rules: {
-    'react/display-name': [0],
-    'react/prop-types': [0]
-  }
-}
+    'import/prefer-default-export': 'off',
+    'import/extensions': 'off',
+    'react/prop-types': 'off',
+    'react/jsx-filename-extension': 'off',
+    'react/jsx-props-no-spreading': 'off',
+    'jsx-a11y/anchor-is-valid': 'off',
+    'no-console': 'off',
+  },
+  settings: {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      },
+      "typescript": {}
+    },
+  },
+};
+

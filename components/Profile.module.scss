@@ -1,0 +1,36 @@
+.container {
+  padding: 8rem 0;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.description {
+  margin-bottom: 1rem;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.contactItem + .contactItem {
+  margin-left: 1rem;
+}
+
+.contactAnchor {
+  composes: roundedIconButton from '../styles/button.scss';
+}
+
+.details {
+  margin-top: 2rem;
+
+  h2 {
+    margin: 2rem 0 .5rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+  }
+}

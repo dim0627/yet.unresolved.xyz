@@ -1,0 +1,41 @@
+.container {
+  margin: 3rem 0;
+}
+
+.duration {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: .8rem;
+}
+
+.arrow {
+  margin: 0 .5rem;
+}
+
+.companyName {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.roles,
+.stacks {
+  font-size: .8rem;
+  list-style: none;
+}
+
+.roles {
+  font-weight: 900;
+}
+
+.listItem {
+  display: inline;
+}
+
+.listItem + .listItem {
+  &::before {
+    content: ',';
+    margin-right: .25rem;
+  }
+}
