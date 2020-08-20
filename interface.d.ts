@@ -15,6 +15,7 @@ interface Profile {
   details: string
   twitterUrl: string
   gitHubUrl: string
+  facebookUrl: string
   linkedInUrl: string
   emailAddress: string
 }

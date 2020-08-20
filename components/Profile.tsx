@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Twitter, GitHub, Linkedin, Mail,
+  Twitter, GitHub, Linkedin, Mail, Facebook,
 } from 'react-feather';
 import ReactMarkdown from 'react-markdown';
 import { Container } from './Container';
@@ -27,7 +27,7 @@ export const Profile = ({ profile }: IProp) => (
                 rel="nofollow noreferrer"
                 target="_blank"
               >
-                <Twitter />
+                <Twitter size={20} />
               </a>
             </li>
             )}
@@ -40,7 +40,7 @@ export const Profile = ({ profile }: IProp) => (
                 rel="nofollow noreferrer"
                 target="_blank"
               >
-                <GitHub />
+                <GitHub size={20} />
               </a>
             </li>
             )}
@@ -53,7 +53,20 @@ export const Profile = ({ profile }: IProp) => (
                 rel="nofollow noreferrer"
                 target="_blank"
               >
-                <Linkedin />
+                <Linkedin size={20} />
+              </a>
+            </li>
+            )}
+          {profile.facebookUrl
+            && (
+            <li className={styles.contactItem}>
+              <a
+                href={profile.facebookUrl}
+                className={styles.contactAnchor}
+                rel="nofollow noreferrer"
+                target="_blank"
+              >
+                <Facebook size={20} />
               </a>
             </li>
             )}
@@ -66,7 +79,7 @@ export const Profile = ({ profile }: IProp) => (
                 rel="nofollow noreferrer"
                 target="_blank"
               >
-                <Mail />
+                <Mail size={20} />
               </a>
             </li>
             )}

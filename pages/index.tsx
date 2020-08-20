@@ -32,6 +32,7 @@ export async function getStaticProps() {
           twitterUrl
           gitHubUrl
           linkedInUrl
+          facebookUrl
           emailAddress
         }
         projects {
