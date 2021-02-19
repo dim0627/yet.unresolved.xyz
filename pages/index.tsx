@@ -61,5 +61,6 @@ export async function getStaticProps() {
       careers,
       profile: profiles[0],
     },
+    revalidate: 60 * 60 * 12,
   };
 }
