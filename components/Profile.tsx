@@ -86,7 +86,9 @@ export const Profile = ({ profile }: IProp) => (
         </ul>
 
         <div className={styles.details}>
-          <ReactMarkdown source={profile.details} escapeHtml={false} />
+          <ReactMarkdown>
+            {profile.details}
+          </ReactMarkdown>
         </div>
       </div>
     </div>

@@ -12,7 +12,9 @@ export const Project = ({ project }: IProps) => (
     <div className={styles.inner}>
       <h3 className={styles.name}>{project.title}</h3>
       <div className={styles.description}>
-        <ReactMarkdown source={project.description} escapeHtml={false} />
+        <ReactMarkdown>
+          {project.description}
+        </ReactMarkdown>
       </div>
       <ul className={styles.stacks}>
         {project.stacks.map((stack) => <li key={stack}>{stack}</li>)}
