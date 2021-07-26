@@ -12,11 +12,14 @@ export const Career = ({ career }: IProps) => (
       {career.joinedAt}
       <ArrowRight size={20} className={styles.arrow} />
       {career.leavedAt || 'Now'}
+      <span className={styles.subcontract}>{career.subcontracting && '[Subcontract]'}</span>
     </div>
     <ul className={styles.roles}>
       {career.roles.map((role) => <li key={role} className={styles.listItem}>{role}</li>)}
     </ul>
-    <h3 className={styles.companyName}>{career.companyName}</h3>
+    <h3 className={styles.companyName}>
+      {career.companyName}
+    </h3>
     <ul className={styles.stacks}>
       {career.stacks.map((stack) => <li key={stack} className={styles.listItem}>{stack}</li>)}
     </ul>
