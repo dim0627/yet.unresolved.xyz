@@ -3,11 +3,11 @@ import { GitHub, Link } from 'react-feather';
 import ReactMarkdown from 'react-markdown';
 import styles from './Project.module.scss';
 
-interface IProps {
+interface Props {
   project: Project
 }
 
-export const Project = ({ project }: IProps) => (
+export const Project: React.VFC<Props> = ({ project }) => (
   <div className={styles.container}>
     <div className={styles.inner}>
       <h3 className={styles.name}>{project.title}</h3>

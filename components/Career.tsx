@@ -2,11 +2,11 @@ import React from 'react';
 import { ArrowRight } from 'react-feather';
 import styles from './Career.module.scss';
 
-interface IProps {
+interface Props {
   career: Career
 }
 
-export const Career = ({ career }: IProps) => (
+export const Career: React.VFC<Props> = ({ career }) => (
   <div className={styles.container}>
     <div className={styles.duration}>
       {career.joinedAt}

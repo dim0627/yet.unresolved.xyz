@@ -6,11 +6,11 @@ import ReactMarkdown from 'react-markdown';
 import { Container } from './Container';
 import styles from './Profile.module.scss';
 
-interface IProp {
+interface Props {
   profile: Profile
 }
 
-export const Profile = ({ profile }: IProp) => (
+export const Profile: React.VFC<Props> = ({ profile }) => (
   <Container>
     <div className={styles.container}>
       <div className={styles.heading}>

@@ -3,11 +3,11 @@ import { Container } from 'components/Container';
 import { SectionHeader } from 'components/SectionHeader';
 import { Career } from 'components/Career';
 
-interface IProp {
+interface Props {
   careers: Career[]
 }
 
-export const Careers = ({ careers }: IProp) => (
+export const Careers: React.VFC<Props> = ({ careers }) => (
   <>
     <SectionHeader title="Careers" />
     <Container>
