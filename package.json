@@ -18,7 +18,7 @@
     "react-markdown": "^7.0.1"
   },
   "devDependencies": {
-    "@types/node": "^16.10.2",
+    "@types/node": "^16.11.4",
     "@types/react": "^17.0.27",
     "@typescript-eslint/eslint-plugin": "^4.0.0",
     "@typescript-eslint/parser": "^3.10.1",
