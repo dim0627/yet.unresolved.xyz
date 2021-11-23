@@ -40,7 +40,7 @@
 
 .listItem + .listItem {
   &::before {
-    content: ',';
+    content: ",";
     margin-right: .25rem;
   }
 }

@@ -38,7 +38,7 @@
 
   li + li {
     &::before {
-      content: ',';
+      content: ",";
       margin-right: .25rem;
     }
   }
@@ -55,5 +55,5 @@
 }
 
 .refsAnchor {
-  composes: roundedIconButton from '../styles/button.scss';
+  composes: roundedIconButton from "../styles/button.scss";
 }
