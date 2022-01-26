@@ -27,5 +27,4 @@ interface Career {
   stacks: string[]
   joinedAt: Date
   leavedAt?: Date
-  subcontracting: boolean
 }

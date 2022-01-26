@@ -50,7 +50,6 @@ export async function getStaticProps() {
           roles
           joinedAt
           leavedAt
-          subcontracting
         }
       }
     `,

@@ -12,7 +12,6 @@ export const Career: React.VFC<Props> = ({ career }) => (
       {career.joinedAt}
       <ArrowRight size={20} className={styles.arrow} />
       {career.leavedAt || 'Now'}
-      <span className={styles.subcontract}>{career.subcontracting && '[Subcontract]'}</span>
     </div>
     <ul className={styles.roles}>
       {career.roles.map((role) => <li key={role} className={styles.listItem}>{role}</li>)}
